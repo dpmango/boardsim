@@ -1,0 +1,119 @@
+.scale {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 11px;
+    user-select: none;
+    padding-left: 5px;
+    padding-right: 7px;
+}
+
+.scale_type_guaranty {
+    padding-top: 0;
+}
+
+.scale_size_xl {}
+
+.scale_size_m {}
+
+.scale__block {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    margin-left: -5px;
+    width: 8px;
+    height: 8px;
+}
+
+.scale__line {
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    background-color: #bbc8d5;
+    height: 4px;
+    margin-left: -5px;
+    @media only screen and (max-width: 1440px) {
+        width: 31px;
+    }
+}
+
+.scale__tooltip {
+    display: none;
+    position: absolute;
+    bottom: 110%;
+    left: 80%;
+    transform: translateX(-50%);
+    color: #3e3e3e;
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+.scale__label_option_main {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0 !important;
+}
+
+.scale__radio-input {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #bbc8d5;
+    cursor: pointer
+}
+
+.scale__real-input:checked+.scale__radio-input_option_main {
+    background-color: #ff6d4a;
+    border: 2px solid #ffffff;
+    width: 12px;
+    height: 12px;
+}
+
+.scale__real-input:checked+.scale__radio-input_option_aditional {
+    background-color: #4ea1ff;
+    border: 2px solid #ffffff;
+    width: 12px;
+    height: 12px;
+}
+
+.scale__label_state_active {
+    width: 12px;
+    height: 12px;
+}
+
+.scale__label_state_active+.scale__tooltip {
+    display: block;
+}
+
+.scale__block_option_main.scale__state_option_active {
+    label {
+        background-color: #ff6d4a !important;
+    }
+    .scale__radio-input {
+        background-color: inherit !important;
+    }
+}
+
+.scale__block_option_aditional.scale__state_option_active {
+    label {
+        background-color: #4ea1ff;
+    }
+    .scale__radio-input {
+        background-color: inherit !important;
+    }
+}
+
+.scale__line_option_main.scale__state_option_active {
+    background-color: #ff6d4a;
+}
+
+.scale__line_option_aditional.scale__state_option_active {
+    background-color: #4ea1ff;
+}

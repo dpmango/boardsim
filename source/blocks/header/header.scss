@@ -1,0 +1,369 @@
+.header {
+    padding: 20px 5px 18px 5px;
+    background-color: #313d47;
+    @media (max-width: 1440px) {
+        padding: 13px 5px 11px 5px;
+    }
+}
+
+[class*="header__col"] {
+    float: left;
+    padding: 0px 5px;
+}
+
+.header-min__col {
+    width: 50%;
+    float: left;
+}
+
+.header__col-logo {
+    width: 20%;
+    @media (max-width: 1860px) {
+        width: 14%;
+    }
+    @media (max-width: 1440px) {
+        width: 22%;
+    }
+    @media (max-width: 1200px) {
+        width: 22%;
+    }
+}
+
+.header__col-info {
+    width: 40%;
+    @media (max-width: 1860px) {
+        width: 43%;
+    }
+    @media (max-width: 1440px) {
+        width: 37%;
+    }
+    @media (max-width: 1200px) {
+        width: 48%;
+    }
+}
+
+.header__col-menu {
+    width: 40%;
+    @media (max-width: 1860px) {
+        width: 43%;
+    }
+    @media (max-width: 1440px) {
+        width: 41%;
+    }
+    @media (max-width: 1200px) {
+        width: 30%;
+    }
+}
+
+.header__menu-item {
+    float: left;
+}
+
+.header__logo {
+    margin-left: 13px;
+    @media (max-width: 1440px) {
+        margin-right: 5px;
+    }
+}
+
+.header-min__logo {
+    margin-left: 10px;
+}
+
+.header__logo-img,
+.header-min__logo-img {
+    max-width: 100%;
+    width: 158px;
+    @media (max-width: 1440px) {
+        display: none;
+    }
+}
+.header__logo-img_min,
+.header-min__logo-img_min {
+    display: none;
+    @media (max-width: 1440px) {
+        display: block;
+    }
+}
+
+.header__menu,
+.header-min__menu {
+    text-align: right;
+    @media (max-width: 1200px) {
+        margin-top: 5px;
+    }
+}
+
+.header__menu-edit {
+    display: inline-block;
+    vertical-align: middle;
+    width: 32%;
+    @media (max-width: 1200px) {
+        width: auto;
+        margin: 0px 5px;
+    }
+}
+
+.header__menu-decision {
+    display: inline-block;
+    vertical-align: middle;
+    width: 25%;
+    @media (max-width: 1200px) {
+        width: auto;
+        margin: 0px 5px;
+    }
+}
+
+.header__menu-help {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22%;
+    @media (max-width: 1440px) {
+        width: 20%;
+    }
+    @media (max-width: 1200px) {
+        width: auto;
+        margin: 0px 5px;
+    }
+}
+
+.header__menu-cabinet {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16%;
+    @media (max-width: 1440px) {
+        width: 18%;
+    }
+    @media (max-width: 1200px) {
+        width: auto;
+        margin: 0px 10px;
+    }
+}
+
+.header-min__menu-cabinet {
+    float: right;
+    max-width: 120px;
+    margin-right: 0px;
+    @media (max-width: 1440px) {
+        width: 94px;
+    }
+}
+
+.header__menu-link,
+.header-min__menu-link {
+    display: block;
+    max-width: 100%;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.header__menu-img-wrap,
+.header-min__menu-img-wrap {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.header__menu-img {
+    margin-right: 20px;
+    @media (max-width: 1860px) {
+        margin-right: 7px;
+    }
+    @media (max-width: 1440px) {
+        max-width: 25px;
+    }
+}
+
+
+.header__menu-text {
+    display: table-cell;
+    vertical-align: middle;
+    //max-width: 80px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $main-name;
+    text-decoration: none;
+    text-align: left;
+    padding-right: 10px;
+    @media (max-width: 1440px) {
+        padding-right: 5px;
+        font-size: 0.9rem;
+    }
+    @media (max-width: 1200px) {
+        display: none;
+    }
+}
+
+.header-min__menu-text {
+    padding-right: 0;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $main-name;
+    text-decoration: none;
+    text-align: left;
+    @media (max-width: 1440px) {
+        font-size: 0.9rem;
+    }
+}
+
+.header__info {
+    margin-left: 60px;
+    @media (max-width: 1860px) {
+        margin-left: 0;
+    }
+}
+
+.header__info-company {
+    float: left;
+    padding-right: 10px;
+    width: 25%;
+    @media (max-width: 1440px) {
+        padding-right: 5px;
+    }
+}
+
+.header__info-gamer {
+    float: left;
+    padding-right: 10px;
+    width: 19%;
+    @media (max-width: 1440px) {
+        padding-right: 5px;
+    }
+}
+
+.header__info-year {
+    float: left;
+    padding-right: 10px;
+    width: 22%;
+    @media (max-width: 1440px) {
+        padding-right: 5px;
+    }
+}
+
+.header__info-step {
+    float: left;
+    padding-right: 10px;
+    width: 34%;
+    @media (max-width: 1440px) {
+        padding-right: 5px;
+    }
+}
+
+.header__info-cnt {
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: top;
+    margin-right: 10px;
+    @media (max-width: 1440px) {
+        margin-right: 5px;
+    }
+}
+
+.header__info-txt {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: $info-title;
+    user-select: none;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @media (max-width: 1440px) {
+        padding-right: 5px;
+        font-size: 0.8rem;
+    }
+}
+
+.header__info-val {
+    font-size: 1.1rem;
+    display: block;
+    font-weight: 400;
+    color: $main-name;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    @media (max-width: 1440px) {
+        padding-right: 5px;
+        font-size: 0.9rem;
+    }
+}
+
+.header__info-btn {
+    background: #5a6976;
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    line-height: 40px;
+    text-align: center;
+    @media (max-width: 1440px) {
+        width: 30px;
+        height: 35px;
+        line-height: 30px;
+    }
+    &:hover {
+        background-color: #60a6f7;
+    }
+}
+
+
+
+.header__info-btn_prev {
+    margin-right: 13px;
+    margin-left: 10px;
+    @media (max-width: 1200px) {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
+
+
+.menu-icon {
+    width: 33px;
+    margin-right: 10px;
+    @media (max-width: 1440px) {
+        width: 29px;
+    }
+}
+
+#users-icon {
+    fill: #12E0FF;
+}
+#upload-icon {
+    fill: #A0DD12;
+ }
+#help-icon {
+    fill: #FECE13;
+}
+#user-icon {
+    fill: #C888FF;
+}
+
+.btn-icon {
+    width: 28px;
+    height: 100%;
+    @media (max-width: 1440px) {
+        width: 20px;
+    }
+}
+.arrow-icon {
+    width: 20px;
+    height: 100%;
+    @media (max-width: 1440px) {
+        width: 15px;
+    }
+}
+.icon-el{
+    fill: white;
+    width: 100%;
+}
+#left-icon {
+    transform: rotate(90deg);
+}
+
+#right-icon {
+    transform: rotate(-90deg);
+}

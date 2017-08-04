@@ -1,0 +1,18 @@
+mixin nav-panel()
+	.nav-panel
+		div.nav-panel__list.nav-panel__list_type_options
+			each val, index in ['Показатели', 'Ключевые показатели', 'Отчетность']
+				a.nav-panel__item.nav-panel__item_location_leftside(href="#")=val
+						
+		div.nav-panel__list.nav-panel__list_type_content
+			a.nav-panel__item.nav-panel__item_location_rightside(href="#" id="chat-switch") Чат
+				span.nav-panel__count 3
+			a.nav-panel__item.nav-panel__item_location_rightside(href="#" id="news-switch") Новости
+				span.nav-panel__count 18
+
+		button.nav-panel__btn(type="button")
+			img.nav-panel__icon( src="img/arrow-left.png" alt="icon")
+		
+
+
+		

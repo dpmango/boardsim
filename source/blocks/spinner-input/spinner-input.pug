@@ -1,0 +1,7 @@
+mixin spinner-input(size, value, maxValue, minValue, interval, currency, sizeCurrency, spinnerField)
+    .spinner-input.spinner-input_position_middle(class=size)
+        .spinner-input__field-container(class=spinnerField)
+            input(type="text" value=value readonly).spinner-input__field
+            img(src="img/spinner-up.png" alt="icon" onclick="addCount(this," + maxValue + "," + interval + ")").spinner-input__btn.spinner-input__btn_arrow_up
+            img(src="img/spinner-down.png" alt="icon" onclick="minusCount(this," + minValue + "," + interval + ")").spinner-input__btn.spinner-input__btn_arrow_bottom
+        .spinner-input__currency(class=sizeCurrency) #{currency}

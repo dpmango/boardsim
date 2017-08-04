@@ -1,0 +1,24 @@
+extends layout/main.pug
+include ../blocks/left_side/finance-left-side/finance-left-side.pug
+include ../blocks/nav-panel/nav-panel.pug
+include ../blocks/modal-password/modal-password.pug
+include ../blocks/finance-content/finance-content.pug
+include ../blocks/modal-help/modal-help.pug
+include ../blocks/right-side/right-side
+include ../blocks/left_side/left-side-btn/left-side-btn.pug
+
+block title
+    title Finance
+
+block pagecontent
+    .page
+        +header(true)
+        +nav-panel()
+        +left-side-btn()
+        +finance-left-side()
+        +finance-content()
+        +right-side()
+        +modal-password()
+        +modal-help()
+append scripts
+     script(src='js/lib/perfect-scrollbar.jquery.min.js')

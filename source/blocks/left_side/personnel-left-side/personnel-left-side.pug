@@ -1,0 +1,60 @@
+include ../../spinner-input/spinner-input.pug
+include ../../scale/scale.pug
+include ../left-side-title/left-side-title.pug
+include ../left-side__list/left-side__list.pug
+
+mixin personnel-left-side()
+    .left-side.left-side_page_index
+        +left-side-title('Персонал')
+        +leftSide-list()
+        .left-side__body.left-side-body_size_l.left-side-body_type_scroll
+            .model__item
+                .left-side__item-title Операционный персонал
+                .model__item-body
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_l.left-side__title-block_position_middle
+                                .left-side__name Доход рабочего
+                            +spinner-input('spinner-input_size_xl', 250,5000,10,10, '$/час', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')
+                    .left-side__item.left-side__item_type_option
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_l
+                                .left-side__name Покрытие  операционным  персоналом
+                            +scale('scale_size_xl','operation-personal','scale__radio-input_option_main', 'scale__block_option_main', 'scale__line_option_main', 0, 25, 50, 75, 100, "%")
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_l
+                                .left-side__name Инвестиции  в персонал
+                            +spinner-input('spinner-input_size_xl', 5000,10000,100,100, 'тыс. $', 'spinner-input__currency_size_m','spinner-input__field-container_size_m')
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_l
+                                .left-side__name Рабочих смен
+                                .left-side__description Мин: 1 смена,</br> Макс: 3 смены
+                            +spinner-input('spinner-input_size_xl', 3,7,1,1, 'дн.', 'spinner-input__currency_size_m','spinner-input__field-container_size_m')
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_l
+                                .left-side__name Часов в смене
+                                .left-side__description Мин: 1 час,</br> Макс: 8 часов
+                            +spinner-input('spinner-input_size_xl', 3,7,1,1, 'дн.', 'spinner-input__currency_size_m','spinner-input__field-container_size_m')
+            .model__item
+                .left-side__item-title Управленческий персонал
+                .model__item-body
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_l
+                                .left-side__name Средний доход управленца
+                            +spinner-input('spinner-input_size_xl', 5000,20000,100,100, 'тыс. $', 'spinner-input__currency_size_m','spinner-input__field-container_size_m')
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_l
+                                .left-side__name Премия  управлцев %  от прибыли
+                                .left-side__description Мин: 0,5%,</br> Макс: 20%, 
+                            +spinner-input('spinner-input_size_xl', 40,100,1,1, '%', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_l
+                                .left-side__name Премия  управлцев %  от прибыли
+                                .left-side__description Мин: 1,</br> Макс: 100
+                            +spinner-input('spinner-input_size_xl', 15,200,1,1, 'рабочих', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')

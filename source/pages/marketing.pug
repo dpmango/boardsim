@@ -1,0 +1,41 @@
+extends layout/main.pug
+include ../blocks/marketing/marketing.pug
+include ../blocks/nav-panel/nav-panel.pug
+include ../blocks/left_side/marketing-left-side/marketing-left-side.pug
+include ../blocks/modal-password/modal-password.pug
+include ../blocks/modal-help/modal-help.pug
+include ../blocks/right-side/right-side
+include ../blocks/left_side/left-side-btn/left-side-btn.pug
+
+block title
+    title Marketing
+
+block pagecontent
+    .page
+        +header(true)
+        +left-side-btn()
+        +marketing-left-side()
+        +nav-panel()
+        +marketing()
+        +right-side()
+        +modal-password()
+        +modal-help()
+append scripts
+    script(src='js/lib/owlCarousel/owl.carousel.min.js')
+    script(src='js/lib/perfect-scrollbar.jquery.min.js')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

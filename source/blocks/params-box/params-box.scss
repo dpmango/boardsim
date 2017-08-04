@@ -1,0 +1,25 @@
+.params-box__top {
+  margin-bottom: 25px;
+  position: relative;
+  padding: 0px  190px 0px 19px;
+  @media (max-width: 1440px) {
+    margin-bottom: 15px;
+  }
+}
+.params-box__top_min {
+  margin-bottom: 15px;
+}
+.params-box__title {
+  font-size: 1.2rem;
+  color: black;
+  margin-bottom: 0;
+  padding-top: 5px;
+}
+
+.params__add {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+
+}

@@ -1,0 +1,147 @@
+.left-side_page_model {
+    width: 412px;
+    @media only screen and (max-width: 1440px) {
+        width: 310px;
+    }
+}
+
+.model__item {
+    border-bottom: 1px solid #dbe3ec;
+}
+
+.model__title {
+    overflow: hidden;
+    padding-top: 20px;
+    padding-bottom: 23px;
+}
+
+.model__components-title {
+    float: left;
+    color: #313d47;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 37px;
+}
+
+.model__edit-btn {
+    float: right;
+    color: #fb8e1a;
+    font-size: 0.82rem;
+    font-weight: 400;
+    line-height: 34px;
+    cursor: pointer;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+}
+
+.model__name {
+    margin-right: 18px;
+    vertical-align: middle;
+}
+
+.model__nice-select-block {
+    display: inline-block;
+    vertical-align: middle;
+    width: 92px;
+    @media only screen and (max-width: 1440px) {
+        width: 67px;
+    }
+}
+
+.model__nice-select-block_size_l {
+    width: 141px;
+}
+
+.model__nice-select-block_size_xl {
+    width: 141px;
+    @media only screen and (max-width: 1440px) {
+        width: 100px;
+    }
+}
+
+.form__select_type_model {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 16px;
+    @media only screen and (max-width: 1440px) {
+        padding-left: 10px;
+    }
+}
+
+.form__select_type_model:after {
+    right: 14px;
+}
+
+.model__input {
+    display: inline-block;
+    vertical-align: middle;
+    width: 87px;
+    max-width: 87px;
+    @media only screen and (max-width: 1440px) {
+        width: 65px;
+        max-width: 65px
+    }
+}
+
+.model__input_size_l {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    @media only screen and (max-width: 1440px) {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+}
+
+.model__input_size_xl {
+    width: 141px;
+    line-height: 35px;
+}
+
+.left-side__title-block_page_model {}
+
+.model__component-title_width_full {
+    width: 100%;
+}
+
+.model__price-inner {
+    padding-top: 12px;
+    padding-bottom: 10px;
+}
+
+.model__price-total {
+    color: #727689;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.model__price-description {
+    color: #727689;
+    font-size: 0.58rem;
+    font-weight: 400;
+}
+
+.model__item_type_add-panel {
+    padding-top: 18px;
+    padding-bottom: 18px;
+    overflow: hidden;
+}
+
+.model__add-btn {
+    float: left;
+    line-height: 37px;
+    color: #60a6f7;
+    font-size: 0.82rem;
+    font-weight: 400;
+    &:hover {
+        color: #60a6f7;
+        opacity: 0.7;
+    }
+}
+
+.model__add-icon {
+    margin-right: 10px;
+}

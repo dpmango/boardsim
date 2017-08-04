@@ -1,0 +1,26 @@
+include ../left-side-title/left-side-title.pug
+include ../../spinner-input/spinner-input.pug
+include ../../scale/scale.pug
+include ../left-side__list/left-side__list.pug
+
+mixin index-left-side()
+    .left-side.left-side_page_index
+        +left-side-title('Персонал')
+        +leftSide-list()
+        .left-side__body.left-side-body_size_l
+            .left-side__item.left-side__item_type_option
+                .left-side__inner.left-side__inner_type_option
+                    .left-side__title-block.left-side__title-block_size_l 
+                        .left-side__name Покупка  новых линий 
+                        .left-side__description Мин: 1 смена, </br> Макс: 3 смены
+                    +spinner-input('spinner-input_size_m', 1,3,1,1, "шт." , '', 'spinner-input__field-container_size_l')
+            .left-side__item.left-side__item_type_option
+                .left-side__inner.left-side__inner_type_option
+                    .left-side__title-block.left-side__title-block_size_l 
+                        .left-side__name Инвестиции производства 
+                    +spinner-input('spinner-input_size_m', 3300,5000,2000,100, "тыс. $", '', 'spinner-input__field-container_size_l')
+            .left-side__item.left-side__item_type_option
+                .left-side__inner.left-side__inner_type_option
+                    .left-side__title-block.left-side__title-block_size_l
+                        .left-side__name Загрузка оборудования
+                    +scale('scale_size_m','personal','scale__radio-input_option_main', 'scale__block_option_main', 'scale__line_option_main', 0, 25, 50, 75, 100, "%")      

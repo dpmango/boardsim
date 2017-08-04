@@ -1,0 +1,41 @@
+.params__table {
+
+  td, th{
+    text-align: center;
+    &:first-child {
+      width: 21.5%;
+      text-align: left;
+    }
+    &:nth-child(2) {
+      width: 16%;
+    }
+    &:nth-child(3) {
+      width: 19%;
+    }
+    &:nth-child(4) {
+      width: 26%;
+    }
+  }
+}
+
+
+.params__tab-link {
+  &:first-child {
+    width:17%;
+  }
+  &:nth-child(2) {
+    width:19%;
+  }
+  &:nth-child(3) {
+    width:17%;
+  }
+  &:nth-child(4) {
+    width:16%;
+  }
+  &:nth-child(5) {
+    width:20%;
+  }
+  &:nth-child(6) {
+    width:11%;
+  }
+}

@@ -1,0 +1,35 @@
+include ../../spinner-input/spinner-input.pug
+include ../../scale/scale.pug
+include ../left-side-title/left-side-title.pug
+include ../left-side__list/left-side__list.pug
+
+
+mixin social-left-side()
+    .left-side.left-side_page_index
+        +left-side-title('Социальная ответственность', 'left-side-title_size_s')
+        +leftSide-list()
+        .left-side__body.left-side-body_size_l
+            .model__item
+                .left-side__item-title Социально-значимые инвестиции
+                .model__item-body
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_xl.left-side__title-block_position_middle
+                                .left-side__name.left-side__name_size_s Повышение  энергоэффективности
+                            +spinner-input('spinner-input_size_xl', 4000,10000,100,100, 'тыс. $', 'spinner-input__currency_size_m','spinner-input__field-container_size_m')
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_xl.left-side__title-block_position_middle
+                                .left-side__name.left-side__name_size_s Повышение  экологичности проз-ва
+                            +spinner-input('spinner-input_size_xl', 4000,10000,100,100, 'тыс. $', 'spinner-input__currency_size_m','spinner-input__field-container_size_m')
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_xl.left-side__title-block_position_middle
+                                .left-side__name.left-side__name_size_s Увеличение  условий труда
+                            +spinner-input('spinner-input_size_xl', 4000,10000,100,100, 'тыс. $', 'spinner-input__currency_size_m','spinner-input__field-container_size_m')
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_xl.left-side__title-block_position_middle
+                                .left-side__name.left-side__name_size_s Завтраты на мониторинг и обучение поставшиков
+                            +spinner-input('spinner-input_size_xl', 4000,10000,100,100, 'тыс. $', 'spinner-input__currency_size_m','spinner-input__field-container_size_m')
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_xl.left-side__title-block_position_middle
+                                .left-side__name.left-side__name_size_s Благотворительность:
+                            +spinner-input('spinner-input_size_xl', 4000,10000,100,100, 'тыс. $', 'spinner-input__currency_size_m','spinner-input__field-container_size_m')

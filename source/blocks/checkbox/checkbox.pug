@@ -1,0 +1,4 @@
+mixin checkbox-group(id, name, lbl)
+	.checkbox-group
+		input(type="checkbox", name=name, id=id, class="hidden")
+		label.checkbox-group__lbl.style-checkbox.lbl(for=id)=lbl

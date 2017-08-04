@@ -1,0 +1,33 @@
+mixin scale(scaleType, inputName, spanClass, scaleClass, scaleLine, value1, value2, value3, value4, value5, currency)
+    .scale(class=scaleType)
+        .scale__inner
+            .scale__block(class=scaleClass)
+                label.scale__label_option_main
+                    input(type="radio" name=inputName valua=value1 hidden).scale__real-input
+                    span.scale__radio-input(class=spanClass)
+                .scale__tooltip #{value1}#{currency}
+            .scale__line(class=scaleLine)
+            .scale__block(class=scaleClass)
+                label.scale__label_option_main
+                    input(type="radio" name=inputName valua=value1 hidden).scale__real-input
+                    span.scale__radio-input(class=spanClass)
+                .scale__tooltip #{value2}#{currency}
+            .scale__line(class=scaleLine)
+            .scale__block(class=scaleClass)
+                label.scale__label_option_main
+                    input(type="radio" name=inputName valua=value1 hidden).scale__real-input
+                    span.scale__radio-input(class=spanClass)
+                .scale__tooltip #{value3}#{currency}
+            .scale__line(class=scaleLine)
+            .scale__block(class=scaleClass)
+                label.scale__label_option_main
+                    input(type="radio" name=inputName valua=value1 hidden).scale__real-input
+                    span.scale__radio-input(class=spanClass)
+                .scale__tooltip #{value4}#{currency}
+            .scale__line(class=scaleLine)
+            .scale__block(class=scaleClass)
+                label.scale__label_option_main
+                    input(type="radio" name=inputName valua=value1 hidden).scale__real-input
+                    span.scale__radio-input(class=spanClass)
+                .scale__tooltip #{value5}#{currency}
+                

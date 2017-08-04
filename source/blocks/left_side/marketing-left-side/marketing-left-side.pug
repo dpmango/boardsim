@@ -1,0 +1,21 @@
+include ../left-side-title/left-side-title.pug
+include ../../spinner-input/spinner-input.pug
+include ../../scale/scale.pug
+include ../marketing-model/marketing-model.pug
+include ../left-side__list/left-side__list.pug
+
+mixin marketing-left-side()
+    .left-side.left-side_page_marketing
+        +left-side-title('Маркетинг')
+        +leftSide-list()
+        .marketing-list
+            each val in ["Европа","Азия","Африка", "Северная Америка", "Южная Америка", "Австралия"]
+                .marketing-list__item
+                    .marketing-list__name=val
+                    .marketing-list__box-model-container
+                        .marketing-list__box-model.owl-carousel
+                            +marketing-model("Модель 1")
+                            +marketing-model("Модель 2")
+                            +marketing-model("Модель 3")
+
+

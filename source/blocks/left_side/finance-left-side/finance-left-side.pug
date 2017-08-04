@@ -1,0 +1,36 @@
+include ../../spinner-input/spinner-input.pug
+include ../../scale/scale.pug
+include ../left-side-title/left-side-title.pug
+include ../left-side__list/left-side__list.pug
+
+mixin finance-left-side()
+    .left-side.left-side_page_index
+        +left-side-title('Финансы')
+        +leftSide-list()
+        .left-side__body.left-side-body_size_l
+            .model__item
+                .left-side__item-title Операционный персонал
+                .model__item-body
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_lm.left-side__title-block_position_middle
+                                .left-side__name Доход рабочего
+                            +spinner-input('spinner-input_size_m', 250,5000,10,10, '$/час', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_l')
+                    .left-side__item.left-side__item_type_option
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_lm
+                                .left-side__name Выплата дивидендов
+                                .left-side__description % от чистой прибыли
+                            +scale('scale_size_xl','devident-count','scale__radio-input_option_main', 'scale__block_option_main', 'scale__line_option_main', 0, 25, 50, 75, 100, "%")
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_lm
+                                .left-side__name Выпуск акций
+                                .left-side__description Макс:1 000
+                            +spinner-input('spinner-input_size_m', 5000,10000,100,100, 'тыс. $', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')
+                    .left-side__item.left-side__item_type_option  
+                        .left-side__inner.left-side__inner_type_option
+                            .left-side__title-block.left-side__title-block_size_lm
+                                .left-side__name Рабочих смен
+                                .left-side__description Макс: 10 000
+                            +spinner-input('spinner-input_size_m', 3,7,1,1, 'дн.', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')

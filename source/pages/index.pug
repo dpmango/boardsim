@@ -1,0 +1,40 @@
+extends layout/main.pug
+include ../blocks/all_personnel/all_personnel.pug
+include ../blocks/left_side/index-left-side/index-left-side.pug
+include ../blocks/nav-panel/nav-panel.pug
+include ../blocks/modal-password/modal-password.pug
+include ../blocks/modal-help/modal-help.pug
+include ../blocks/right-side/right-side
+include ../blocks/left_side/left-side-btn/left-side-btn.pug
+
+
+block title
+    title All Personnel
+
+block pagecontent
+    .page
+        +header(true)
+        +left-side-btn()
+        +index-left-side()
+        +nav-panel()
+        +all_personnel()
+        +right-side()
+        +modal-password()
+        +modal-help()
+append scripts
+    script(src='js/lib/perfect-scrollbar.jquery.min.js')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

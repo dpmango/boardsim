@@ -1,0 +1,27 @@
+include ../../blocks/header/header.pug
+include ../../blocks/footer/footer.pug
+
+doctype html
+html(lang="ru")
+	head
+		block title
+			title Главная страница
+		meta(charset="utf-8")
+		meta(name="viewport", content="width=device-width, min-width=768,  initial-scale=1")
+		meta(name="description", content="description")
+		link(rel="stylesheet", href="css/main.css")
+
+	body
+		block pagecontent
+		block scripts
+			script(src='js/lib/jquery/jquery.js')
+			script(src='js/lib/bootstrap/bootstrap.min.js')
+			script(src='js/main.js')
+			script(src='js/common.js')
+
+
+
+			
+
+
+			

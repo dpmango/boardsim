@@ -1,0 +1,217 @@
+.right-side {
+    width: 0px;
+    min-height: 100vh;
+    float: right;
+    box-shadow: 0 7px 13px rgba(31, 70, 110, 0.04), 0 7px 27px rgba(128, 142, 177, 0.09);
+    background-color: #eef1f4;
+    @media only screen and (max-width: 1199px) {
+        position: absolute;
+        right: 0;
+        top: 115px;
+        bottom: 0;
+        z-index: 1000;
+    }
+}
+
+.right-side__body-item {
+    margin-bottom: 26px;
+}
+
+.right-side__container {
+    display: none;
+}
+
+.active-right-side {
+    display: block;
+}
+
+.right-side__body-inner {
+    padding: 29px 21px 25px 24px;
+    background-color: #fbfbfb;
+    position: relative;
+}
+
+.right-side__body {
+    margin-bottom: 12px;
+}
+
+.right-side__image-details {
+    opacity: 0;
+    position: absolute;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    top: -8px;
+    width: 189px;
+    box-shadow: 0 1px 6px rgba(31, 70, 110, 0.06), 0 1px 23px rgba(31, 70, 110, 0.22);
+    border-radius: 7px;
+    text-align: center;
+    background-color: #f6fafd;
+    transition: 0.3s;
+}
+
+.right-side__type_from-user {
+    left: -203px;
+}
+
+.right-side__type_from-me {
+    right: -203px;
+}
+
+.right-side__date {
+    color: #b2b5c1;
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+
+.right-side__name {
+    color: #313d47;
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+.right-side__body-image-block {
+    width: 13%;
+    position: relative;
+    cursor: pointer;
+}
+
+.right-side__body-image {
+    width: 100%;
+    height: 100%;
+}
+
+.right-side__body-image:hover+.right-side__image-details,
+.right-side__body-gender:hover+.right-side__image-details {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.right-side__text-block {
+    width: 79%;
+}
+
+.right-side__body-image-block_type_from-me {
+    float: left;
+}
+
+.right-side__text-block {
+    border-radius: 7px;
+    padding: 22px 13px 20px 18px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.right-side__text-block_type_from-me {
+    float: right;
+    color: #313d47;
+    background-color: #eef1f4;
+}
+
+.right-side__body-image-block_type_from-user {
+    float: right;
+    background-color: #5a6976;
+    border-radius: 50%;
+    &:after {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+    }
+}
+
+.right-side__text-block_type_from-user {
+    float: left;
+    box-shadow: 0 1px 6px rgba(31, 70, 110, 0.06);
+    background-color: #60a6f7;
+    color: #ffffff;
+}
+
+.right-side__body-gender {
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.47rem;
+    font-weight: 300;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right-side__input-block {
+    padding: 30px 24px 24px 24px;
+    background-color: #f4f7fa;
+    border-top: 1px solid #dce7f1;
+    position: relative;
+}
+
+.right-side__input-block_inner {
+    position: relative;
+}
+
+.right-side__input {
+    position: relative;
+    width: 100%;
+    padding: 12px 30% 13px 22px;
+    display: block;
+    border-radius: 21px;
+    border: 1px solid #dde5ee;
+    background-color: #ffffff;
+}
+
+.right-side__search-icon_block {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14%;
+}
+
+.right-side__btn-push {
+    position: absolute;
+    cursor: pointer;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    box-shadow: 0 1px 6px rgba(31, 70, 110, 0.06);
+    background-color: #60a6f7;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.7;
+        transition: 0.3s;
+    }
+}
+
+.right-side__btn-push_form_quater {
+    border-radius: 7px;
+    width: 46px;
+    height: 46px;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.right-side__btn-push_form_circle {
+    display: block;
+    border-radius: 50%;
+    border: 4px solid #cee2f9;
+    width: 52px;
+    padding-left: 7px;
+    height: 51px;
+    padding-top: 7px;
+    background-color: #60a6f7;
+    box-shadow: 0 1px 6px rgba(31, 70, 110, 0.06);
+}
+
+.right-side__search-icon-block {
+    padding-left: 12px;
+    border-left: 1px solid #e9eef4;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 18%;
+    @media only screen and (max-width: 1550px) {
+        right: 26%;
+    }
+}
+
+.right-side__search-icon {
+    cursor: pointer;
+}

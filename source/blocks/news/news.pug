@@ -1,0 +1,243 @@
+include ../spinner-input/spinner-input.pug
+mixin news()
+	.news.content
+		.content__inner.clearfix
+			.content__col
+				.widget
+					.widget__title.widget__title_big
+						.widget__title-cnt
+							span.widget__title-txt Список новостей
+							sapn.widget__title-h
+								svg.widget__title-h-img(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 473.733 473.733', style='enable-background:new 0 0 473.733 473.733;', xml:space='preserve')
+									path(d='M231.2,336.033c-9.35,0-17,7.65-17,17v11.333c0,9.35,7.65,17,17,17s17-7.65,17-17v-11.333\
+																	  C248.2,343.683,240.55,336.033,231.2,336.033z')
+									path(d='M236.867,473.733c130.617,0,236.867-106.25,236.867-236.867S367.483,0,236.867,0S0,106.25,0,236.867\
+																	  S106.25,473.733,236.867,473.733z M236.867,34c111.917,0,202.867,90.95,202.867,202.867s-90.95,202.867-202.867,202.867\
+																	  S34,348.783,34,236.867S124.95,34,236.867,34z')
+									path(d='M163.2,194.367C163.483,194.367,163.483,194.367,163.2,194.367c9.35,0,17-7.083,17-16.433c0,0,0.283-13.6,7.083-26.917\
+																	  c8.5-17,23.517-25.5,45.617-25.5c20.683,0,35.983,5.667,44.483,16.717c7.083,9.067,9.067,21.533,5.667,35.133\
+																	  c-4.25,16.717-18.7,31.167-32.583,45.333c-17,17.567-34.85,35.417-34.85,59.5c0,9.35,7.65,17,17,17s17-7.65,17-17\
+																	  c0-10.2,12.183-22.667,25.217-35.7c16.15-16.433,34.567-35.133,41.083-60.633c6.233-23.517,1.983-47.033-11.617-64.317\
+																	  c-10.483-13.6-31.45-30.033-71.117-30.033c-44.483,0-65.733,23.8-75.933,44.2c-10.2,20.4-10.767,39.95-10.767,42.217\
+																	  C146.483,187,153.85,194.367,163.2,194.367z')
+								span.widget__help
+									p
+										| Описание того что это за блок,
+										| и зачем он вообще нужен. Некое
+										| описание подсказки для новичков.
+										| Может быть дилнное описание....
+						a.widget__title-arrow(href='')
+							img.widget__title-arrow-ico(src='img/chevron-down.png', alt='icon')
+					.widget__body
+						form.search
+							.search__inner
+								input.search__input(type='text', placeholder='Поиск')
+								button.btn.search__ico(type="submit")
+									img(src='img/search-icon.png' srcset='img/search-icon@2x.png 2x'  alt='icon')
+							.count
+								| Всего новостей:
+								span 3
+						.data-table
+							table.data-table__cnt
+								thead
+									tr.data-table__hr
+										th.data-table__h.data-table__h-txt_black.data-table__for-arrow
+											span.data-table__h-txt Название новости
+										th.data-table__h.data-table__for-arrow
+											span.data-table__h-txt Дата добавления
+								tbody
+									tr.data-table__r
+										td.data-table__d
+											| Первая новость
+										td.data-table__d
+											| 06-16-2017
+
+									tr.data-table__r
+										td.data-table__d
+											| Пята новость
+										td.data-table__d
+											| 06-16-2017
+
+									tr.data-table__r
+										td.data-table__d
+											| Девятая новость
+										td.data-table__d
+											| 06-16-2017
+									tr.data-table__r
+										td.data-table__d
+											| Шестая новость
+										td.data-table__d
+											| 06-16-2017
+									tr.data-table__r
+										td.data-table__d
+											| Первая новость
+										td.data-table__d
+											| 06-16-2017
+
+									tr.data-table__r
+										td.data-table__d
+											| Пята новость
+										td.data-table__d
+											| 06-16-2017
+
+									tr.data-table__r
+										td.data-table__d
+											| Девятая новость
+										td.data-table__d
+											| 06-16-2017
+									tr.data-table__r
+										td.data-table__d
+											| Шестая новость
+										td.data-table__d
+											| 06-16-2017
+
+				.widget.widget__blue.widget_h_a
+					.widget__title.widget__title_with-btn.widget__title_big
+						a.widget__add-btn.btn(href="")
+							span.grey-add-circle
+						.widget__title-cnt
+							span.widget__title-txt
+								|	Влияние новости
+
+						a.widget__del-btn.btn(href="")
+							span.del-circle
+					.widget__body
+						form.form
+							.group.group_b
+								.group__inner.group__inner_w_a
+									label.group__lbl.lbl Параметр хода:
+									select.form__select.select-style.group__inp
+										option(selected='') Расходы на скоращения рабочих
+										option Расходы на скоращения рабочих
+										option Расходы на скоращения рабочих
+							.group
+								.group__inner.group__inner_w_a
+									label.group__lbl.lbl Регион:
+									select.form__select.group__inp.select-style
+										option(selected='') Все
+										option Все
+										option Все
+							.group.group_b.group_big
+								.group__inner.group__inner_w_a
+									label.group__lbl.lbl Игроки:
+									select.form__select.group__inp.select-style
+										option(selected='') Выборочно
+										option Выборочно
+										option Выборочно
+							.group.group_b.group_big
+								.group__inner.group__inner_w_a
+									label.group__lbl.group__lbl_small.lbl Условие:
+									.group__inp.group__inp_big
+										span.prefix-text Если
+										span.form__span.form__span_42
+											select.form__select.form__select_a.select-style
+												option(selected='') Продажи
+												option Продажи
+												option Продажи
+										span.form__span.form__span_23
+											select.form__select.form__select_a.select-style
+												option(selected='') =>
+												option() =>
+												option() =>
+										+spinner-input('spinner-input_size_s', 1200,5000,100,100, "" , '', 'spinner-input__field-container_size_s')
+							.add-btn-box.text-center
+								a.add-btn-box__btn.btn(href="")
+									span.add-btn-box__circle.add-circle
+									| Добавить условие
+							.group
+								.group__inner.group__inner_w_a
+								button.primary-btn(type='button')
+									span.primary-btn__txt Готово
+								button.transp-btn.form__btns-left-it(type='button')
+									span.transp-btn__txt или отменить
+
+
+			.content__col
+				.widget.command-widget.widget_h_a
+					.widget__title.widget__title_big
+						.widget__title-cnt
+							span.widget__title-txt Информация о новости
+							sapn.widget__title-h
+								svg.widget__title-h-img(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 473.733 473.733', style='enable-background:new 0 0 473.733 473.733;', xml:space='preserve')
+									path(d='M231.2,336.033c-9.35,0-17,7.65-17,17v11.333c0,9.35,7.65,17,17,17s17-7.65,17-17v-11.333\
+																	  C248.2,343.683,240.55,336.033,231.2,336.033z')
+									path(d='M236.867,473.733c130.617,0,236.867-106.25,236.867-236.867S367.483,0,236.867,0S0,106.25,0,236.867\
+																	  S106.25,473.733,236.867,473.733z M236.867,34c111.917,0,202.867,90.95,202.867,202.867s-90.95,202.867-202.867,202.867\
+																	  S34,348.783,34,236.867S124.95,34,236.867,34z')
+									path(d='M163.2,194.367C163.483,194.367,163.483,194.367,163.2,194.367c9.35,0,17-7.083,17-16.433c0,0,0.283-13.6,7.083-26.917\
+																	  c8.5-17,23.517-25.5,45.617-25.5c20.683,0,35.983,5.667,44.483,16.717c7.083,9.067,9.067,21.533,5.667,35.133\
+																	  c-4.25,16.717-18.7,31.167-32.583,45.333c-17,17.567-34.85,35.417-34.85,59.5c0,9.35,7.65,17,17,17s17-7.65,17-17\
+																	  c0-10.2,12.183-22.667,25.217-35.7c16.15-16.433,34.567-35.133,41.083-60.633c6.233-23.517,1.983-47.033-11.617-64.317\
+																	  c-10.483-13.6-31.45-30.033-71.117-30.033c-44.483,0-65.733,23.8-75.933,44.2c-10.2,20.4-10.767,39.95-10.767,42.217\
+																	  C146.483,187,153.85,194.367,163.2,194.367z')
+								span.widget__help
+									p
+										| Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
+										| я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+										| словно созданном для таких, как я.
+						a.widget__title-arrow(href='')
+							img.widget__title-arrow-ico(src='img/chevron-down.png', alt='icon')
+					.widget__body.command-widget__body
+						.command-panel
+							button.btn.command-panel__btn-edit(type='button')
+								img.command-panel__edit-img(src='img/redactor-icon.png', srcset='img/redactor-icon@2x.png 2x' alt='icon')
+								span.command-panel__edit-txt Включить редактирование
+							button.primary-btn(type='button')
+								img.primary-btn__img(src='img/add-item.png', srcset='img/add-item@2x.png 2x', alt='icon')
+								span.primary-btn__txt Новость
+						.widget__form
+							form
+								.form__group.clearfix
+									span.form__label Название новости:
+									input.form__inp(type='text', value='Моя первая новость')
+								.form__group.clearfix
+									span.form__label Фейк:
+									.form__btns-box
+										button.btn.fake-btn.fake-btn__yes(type='button') Да
+										button.btn.fake-btn.fake-btn__no(type='button') Нет
+								.form__group.clearfix
+									span.form__label Срок действия:
+									.form__right-block
+										select.form__select.form__select_min.select-style()
+											option(selected='') 1
+											option 2
+											option 3
+										span.sufix-text ход (ов)
+								.form__group.clearfix
+									span.form__label Начало действия:
+									.form__right-block
+										select.form__select.form__select_min.select-style()
+											option(selected='') Через 2 хода
+											option Через 3 хода
+											option Через 4 хода
+								.form__group.clearfix
+									span.form__label Название новости:
+									input.form__inp(type='text', value='Моя первая новость')
+								.form__group.clearfix
+									span.form__label Сообщение при активации:
+									textarea.form__textarea(placeholder="Оставить пустым, если не потребуется")
+								.form__group.clearfix
+									span.form__label Влияет на параметры:
+									.param-tbl
+										.param-tbl__it
+											.param-tbl__name Расходы на найм рабочих
+											.param-tbl__val +15%
+										.param-tbl__it
+											.param-tbl__name Коэф.нт ускорения падения лояльности рабочего
+											.param-tbl__val +20%
+								.add-btn-box.text-center
+									a.add-btn-box__btn.btn(href="")
+										span.add-btn-box__circle.add-circle
+										| Добавить параметр
+								.form__btns.clearfix
+									.form__btns-left
+										button.danger-btn(type='button')
+											img.danger-btn__img(src='img/remove-icon.png', srcset="img/remove-icon@2x.png 2x", alt='icon')
+											span.danger-btn__txt Удалить
+									.form__btns-right
+										button.transp-btn.form__btns-left-it(type='button')
+											span.transp-btn__txt Отменить
+										button.primary-btn.form__btns-left-it(type='button')
+											img.primary-btn__img(src='img/save-icon.png', srcset= 'img/save-icon@2x.png 2x',  alt='icon')
+											span.primary-btn__txt Сохранить
+

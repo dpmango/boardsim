@@ -1,0 +1,91 @@
+    .spinner-input {
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    .spinner-input_size_m {
+        width: 213px;
+        @media only screen and (max-width: 1440px) {
+            width: 167px;
+        }
+    }
+    
+    .spinner-input_size_s {}
+    
+    .spinner-input_size_xl {}
+    
+    .spinner-input_position_middle {
+        vertical-align: middle;
+    }
+    
+    .spinner-input__field-container {
+        display: inline-block;
+        vertical-align: middle;
+        position: relative;
+    }
+    
+    .spinner-input__field-container_size_m {
+        width: 131px;
+        margin-right: 12px;
+        @media only screen and (max-width: 1440px) {
+            width: 98px;
+        }
+    }
+    
+    .spinner-input__field-container_size_l {
+        width: 136px;
+        margin-right: 12px;
+        @media only screen and (max-width: 1440px) {
+            width: 98px;
+        }
+    }
+    
+    .spinner-input_size_s {
+        width: 100px;
+        margin-right: 0;
+    }
+    
+    .spinner-input__field-container_size_xl {
+        @media only screen and (max-width: 1440px) {
+            width: 168px;
+        }
+    }
+    
+    .spinner-input__field-container_size_xxl {}
+    
+    .spinner-input__field {
+        padding: 10px 11px 9px 17px;
+        border-radius: 50px;
+        border: 1px solid #dde5ee;
+        display: block;
+        width: 100%;
+        color: #3e3e3e;
+        font-size: 1rem;
+        font-weight: 400;
+        user-select: none;
+    }
+    
+    .spinner-input__btn {
+        position: absolute;
+        display: block;
+        cursor: pointer;
+        right: 10%;
+    }
+    
+    .spinner-input__btn_arrow_up {
+        top: 25%;
+    }
+    
+    .spinner-input__btn_arrow_bottom {
+        bottom: 25%;
+    }
+    
+    .spinner-input__currency {
+        display: inline-block;
+        vertical-align: middle;
+        color: #3e3e3e;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    .spinner-input__currency_size_m {}

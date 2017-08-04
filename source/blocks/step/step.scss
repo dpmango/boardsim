@@ -1,0 +1,32 @@
+.step__tab-link {
+  &:first-child {
+    width: 22%;
+  }
+  &:nth-child(2) {
+    width:16%;
+  }
+  &:nth-child(3) {
+    width:15%;
+  }
+  &:nth-child(4) {
+    width:16%;
+  }
+  &:nth-child(5) {
+    width:16%;
+  }
+  &:nth-child(6) {
+    width:15%;
+  }
+}
+
+.step__table {
+  th, td {
+    &:first-child {
+      width: 36%;
+    }
+  }
+}
+
+html {
+  ///overflow: hidden;
+}

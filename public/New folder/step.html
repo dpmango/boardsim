@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Step</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, min-width=768,  initial-scale=1">
+    <meta name="description" content="description">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="page">
+      <header class="header clearfix">
+        <div class="header-min">
+          <div class="header-min__col">
+            <div class="header-min__logo"><a class="header-min__logo-link" href="index.html"><img class="header-min__logo-img" src="img/logo.png" alt="logo"/></a></div>
+          </div>
+          <div class="header-min__col">
+            <div class="header-min__menu clearfix">
+              <div class="header-min__menu-cabinet"><a class="header-min__menu-link" href="#password-modal" data-toggle="modal" data-target="#password-modal">
+                  <div class="header-min__menu-img-wrap"><img class="header-min__menu-img" src="img/user-icon.png" alt="icon"/></div><span class="header-min__menu-text">Личный кабинет</span></a></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="left-side left-side_page_index">
+        <div class="left-side-title left-side-title_visiable_false">
+          <div class="left-side-title__block">Меню<img class="left-side-title__icon" src="img/chevron-down.png"/></div>
+        </div>
+        <div class="left-nav">
+          <div class="left-nav__item">
+            <div class="left-nav__title">Пользователи</div>
+            <div class="left-nav__body"></div>
+          </div>
+          <div class="left-nav__item">
+            <div class="left-nav__title">Потоки</div>
+            <div class="left-nav__body"></div>
+          </div>
+          <div class="left-nav__item">
+            <div class="left-nav__title">Команды</div>
+            <div class="left-nav__body"></div>
+          </div>
+          <div class="left-nav__item">
+            <div class="left-nav__title">Ходы</div>
+            <div class="left-nav__body"></div>
+          </div>
+          <div class="left-nav__item">
+            <div class="left-nav__title">Новости</div>
+            <div class="left-nav__body"></div>
+          </div>
+          <div class="left-nav__item">
+            <div class="left-nav__title">Статистика</div>
+            <div class="left-nav__body"></div>
+          </div>
+          <div class="left-nav__item">
+            <div class="left-nav__title">Параметры</div>
+            <div class="left-nav__body"></div>
+          </div>
+        </div>
+      </div>
+      <div class="step content">
+        <div class="content__inner clearfix">
+          <div class="top-line">
+            <form class="top-line__form">
+              <div class="top-line__group">
+                <label class="top-line__lbl lbl">Поток</label>
+                <select class="top-line__select select-style form__select">
+                  <option selected="">Поток №1</option>
+                  <option>Поток №2</option>
+                  <option>Поток №3</option>
+                </select>
+              </div>
+              <div class="top-line__btns">
+                <button class="btn top-line__btn-save" type="button">Сохранить конфигурацию</button>
+                <button class="btn top-line__btn-load" type="button">Загрузить конфигурацию</button>
+              </div>
+            </form>
+          </div>
+          <div class="tab-list"><a class=" step__tab-link tab-list__link" href="#param">Параметры игры</a><a class="active step__tab-link tab-list__link" href="#step0">Ход 0</a><a class=" step__tab-link tab-list__link" href="#step1">Ход 1</a><a class=" step__tab-link tab-list__link" href="#step2">Ход 2</a><a class=" step__tab-link tab-list__link" href="#step3">Ход 3</a><a class=" step__tab-link tab-list__link" href="#step4">Ход 4</a>
+            <button class="btn tab-list__add" type="button"><span class="add-circle"></span></button>
+          </div>
+          <div class="tabs">
+            <form class="tab" id="step0">
+              <div class="group group_b">
+                <div class="group__inner group__inner_big">
+                  <label class="group__lbl lbl">Дата дедлайна:</label>
+                  <div class="group__inp date">
+                    <input class="date__inp inp" id="deadline-date" type="text" value=""/>
+                    <button class="btn date__btn" type="button"><img class="date__ico" src="img/date.png"/></button>
+                  </div>
+                </div>
+              </div>
+              <div class="group">
+                <div class="group__inner group__inner_big">
+                  <label class="group__lbl lbl">Поиск по новостям:</label>
+                  <div class="group__inp search-block">
+                    <input class="search-block-inpt inp" type="text" placeholder="Диагональ экрана (Дюйм)"/>
+                    <button class="search-block__btn btn" type="submit"><img class="search-block__ico" src="img/search-icon.png" alt="icon"/></button>
+                  </div>
+                </div>
+              </div>
+              <div class="tab__block">
+                <div class="list-data">
+                  <div class="list-data__inner">
+                    <div class="list-data__cnt">
+                      <div class="checkbox-group">
+                        <input class="hidden" type="checkbox" name="new" id="new1"/>
+                        <label class="checkbox-group__lbl style-checkbox lbl" for="new1">Забастовки в Китае</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input class="hidden" type="checkbox" name="new" id="new2"/>
+                        <label class="checkbox-group__lbl style-checkbox lbl" for="new2">Финаснвоый кризис</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input class="hidden" type="checkbox" name="new" id="new3"/>
+                        <label class="checkbox-group__lbl style-checkbox lbl" for="new3">Открытие новых полпуроводников</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input class="hidden" type="checkbox" name="new" id="new4"/>
+                        <label class="checkbox-group__lbl style-checkbox lbl" for="new4">Новый вид налогов</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input class="hidden" type="checkbox" name="new" id="new5"/>
+                        <label class="checkbox-group__lbl style-checkbox lbl" for="new5">Открытие платежей в Америку</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input class="hidden" type="checkbox" name="new" id="new6"/>
+                        <label class="checkbox-group__lbl style-checkbox lbl" for="new6">Забастовки в Китае</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input class="hidden" type="checkbox" name="new" id="new7"/>
+                        <label class="checkbox-group__lbl style-checkbox lbl" for="new7">Финаснвоый кризис</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input class="hidden" type="checkbox" name="new" id="new8"/>
+                        <label class="checkbox-group__lbl style-checkbox lbl" for="new8">Открытие новых полпуроводников</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input class="hidden" type="checkbox" name="new" id="new9"/>
+                        <label class="checkbox-group__lbl style-checkbox lbl" for="new9">Новый вид налогов</label>
+                      </div>
+                      <div class="checkbox-group">
+                        <input class="hidden" type="checkbox" name="new" id="new10"/>
+                        <label class="checkbox-group__lbl style-checkbox lbl" for="new10">Открытие платежей в Америку</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <p class="list-data__selected">Выбрано новостей: 3</p>
+              </div>
+              <div class="tab__grey-block">
+                <p class="tab__grey-block-title">Аналитика:</p>
+                <div class="file">
+                  <input class="file__inp" id="analitic-file" type="file" name=""/>
+                  <button class="file__btn btn" type="button">Загрузить файл PDF</button>
+                  <p class="file__value"></p>
+                </div>
+                <p class="tab__grey-block-add">Добавленно аналитических статей: 1</p>
+              </div>
+              <div class="params-box">
+                <div class="params-box__top params-box__top_min">
+                  <p class="params-box__title">Параметры:</p>
+                </div>
+                <div class="data-table data-table_style2 data-table_height_a step__table">
+                  <table class="data-table__cnt">
+                    <tbody>
+                      <tr class="data-table__r">
+                        <td class="data-table__d"><span>Максимальная цена</span></td>
+                        <td class="data-table__d"><span class="black">500</span></td>
+                      </tr>
+                      <tr class="data-table__r">
+                        <td class="data-table__d"><span>Минимальная цена</span></td>
+                        <td class="data-table__d"><span class="black">100</span></td>
+                      </tr>
+                      <tr class="data-table__r">
+                        <td class="data-table__d"><span>Коэффициент наценки аутсорсера на цену</span></td>
+                        <td class="data-table__d"><span class="black">0,3</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade modal-password" id="password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-password__dialog" role="document">
+          <div class="modal-content modal-password__conent">
+            <div class="modal-password__list-container">
+              <div class="modal-password__list-block">
+                <p class="modal-password__list-item"><a class="modal-password__list-link" href="#">Вход</a></p>
+                <p class="modal-password__list-item"><a class="modal-password__list-link" href="#">Регистрация</a></p>
+              </div>
+              <div class="modal-password__logo"><img class="modal-password__logo-img" src="img/modal-logo.png"/></div>
+            </div>
+            <div class="modal-password__form">          
+              <button class="close modal-password__close-button" data-dismiss="modal" arial-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modal-password__form-block">
+                <div class="modal-password__form-title">Напомнить пароль</div>
+                <input class="modal-password__form-input" type="text" placeholder="Ваш логин"/>
+                <button class="modal-password-btn" type="button" data-dismiss="modal" arial-label="Close">Выслать пароль    </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/lib/jquery/jquery.js"></script>
+    <script src="js/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/lib/niceSelect/jquery.nice-select.min.js"></script>
+    <script src="js/lib/perfect-scrollbar.jquery.min.js"></script>
+    <script src="js/lib/jquery.simple-dtpicker.js"></script>
+  </body>
+</html>

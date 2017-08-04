@@ -1,0 +1,8 @@
+include ./chat/chat.pug
+include ./news/news.pug
+
+
+mixin right-side()
+    .right-side 
+        +chat()
+        +news()

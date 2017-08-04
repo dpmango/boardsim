@@ -1,0 +1,33 @@
+.left-side__list {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: none;
+    @media only screen and (max-width: 1440px) {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+}
+
+.left-side__list-item {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    border-bottom: 1px solid #dbe3ec;
+    @media only screen and (max-width: 1440px) {
+        padding: 7px 0;
+    }
+}
+
+.left-side__list-link {
+    color: #000000;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+        color: #000000;
+        text-decoration: none;
+        transition: 0.3s;
+        .left-side__list-item {
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+    }
+}

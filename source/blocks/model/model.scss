@@ -1,0 +1,122 @@
+.models {
+  max-height: 100%;
+}
+.model__data {
+  @media (max-width: 1700px) {
+    display: none;
+  }
+
+  &.active {
+    display: block;
+  }
+}
+.model-nav {
+  display: inline-block;
+}
+.model-nav__name {
+  display: inline-block;
+  vertical-align: middle;
+  color: #a3a1a1;
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin-bottom: 0;
+  @media (max-width: 1440px) {
+    font-size: 1rem;
+  }
+}
+.model-nav__btns {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.model-nav__btn {
+  border-radius: 7px;
+  background-color: #5a6976;
+  outline: none;
+  border: none;
+  padding: 7px 4px;
+  line-height: 1;
+  &:hover {
+    background-color: #60a6f7;
+  }
+  @media (max-width: 1440px) {
+    padding: 2px 5px 5px;
+  }
+}
+
+.model-nav__btn-img {
+  max-width: 70%;
+  @media (max-width: 1440px) {
+    width: 13px;
+  }
+}
+
+
+.model {
+  position: relative;
+  padding-left: 30%;
+  @media (max-width: 1860px) {
+    padding-left: 27%;
+  }
+  @media (max-width: 1700px) {
+    padding-left: 0;
+  }
+}
+.model__nav {
+  display: none;
+  margin-bottom: 20px;
+  text-align: center;
+  @media (max-width: 1700px) {
+    display: block;
+  }
+}
+.model__nav-link {
+  display: inline-block;
+  font-size: 1rem;
+  padding: 10px 20px;
+  color: #5a6976;
+  border-radius: 7px;
+  border: 1px solid #dde5ee;
+  background-color: #ffffff;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  @media (max-width: 1440px) {
+    padding: 7px 15px ;
+  }
+  &.active, &:hover {
+    color: white;
+    background: #60a6f7;
+    text-decoration: none;
+  }
+}
+.model__img {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 20%;
+  max-height: 100%;
+  @media (max-width: 1860px) {
+    left: 20px;
+  }
+  @media (max-width: 1700px) {
+    display: none;
+    position: static;
+    transform: translateY(0);
+    margin: 15px  auto;
+  }
+  &.active {
+    display: block ;
+  }
+}
+.data {
+  margin-top: 10px;
+  margin-left: 25px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.widget-model__title {
+  margin-right: 30px;
+}

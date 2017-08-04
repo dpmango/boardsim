@@ -1,0 +1,99 @@
+include ../checkbox/checkbox.pug
+include ../top-line/top-line.pug
+include ../tab-list/tab-list.pug
+mixin params()
+	.params.content
+		.content__inner.clearfix
+			+top-line()
+			-
+				var arrTab = [{name: 'Процессоры', href: '#processor', active: ''},
+								{name: 'Диагональ', href: '#diagonal', active: 'active'},
+								{name: 'Матрица', href: '#matrix', active: ''},
+								{name: 'Камера', href: '#camera', active: ''},
+								{name: 'Аккумулятор', href: '#battery', active: ''},
+								{name: 'Корпус', href: '#corps', active: ''}]
+			+tab-list(arrTab, 'params__tab-link')
+			.tabs
+				#processor.tab
+					span.tab__text processor
+				#diagonal.tab(style={'display':'block'})
+					form
+						.group.group_b
+							.group__inner
+								button.btn.btn-edit(type='button')
+									img.btn-edit__img(src='img/redactor-icon.png', srcset= 'img/redactor-icon@2x.png 2x' alt='icon')
+									span.btn-edit__txt Включить редактирование
+						.group
+							.group__inner
+								label.group__lbl.lbl Полное название группы:
+								input.group__inp.inp(type="text", name="", value="Диагональ экрана (Дюйм)")
+						.group.group_b.group_big
+							.group__inner
+								label.group__lbl.lbl Краткое описание:
+								input.group__inp.inp(type="text", name="", value="Диагональ экрана (Дюйм)")
+						.params-box
+							.params-box__top.clearfix
+								p.params-box__title Параметры:
+								button.primary-btn.params__add(type='button')
+									img.primary-btn__img(src='img/add-item.png', srcset= 'img/add-item.png 2x', alt='icon')
+									span.primary-btn__txt Параметр
+
+							.data-table.data-table_height_a.params__table
+								table.data-table__cnt
+									thead
+										tr.data-table__hr.data-table__hr_b0
+											th.data-table__h.data-table__h-txt_black.data-table__h_big
+												span Диагональ экрана (Дюйм)
+											th.data-table__h.black.data-table__h_big
+												span HTП (мин)
+											th.data-table__h.black.data-table__h_big
+												span HTП (макс)
+											th.data-table__h.black.data-table__h_big
+												span Энергоемкость (mAh)
+											th.data-table__h.black.data-table__h_big
+												span Начальная цена ($)
+									tbody
+										tr.data-table__r
+											td.data-table__d
+												span 2,4
+											td.data-table__d
+												span.black 1
+											td.data-table__d
+												span.black 1
+											td.data-table__d
+												span.black 20
+											td.data-table__d
+												span.black 20
+										tr.data-table__r
+											td.data-table__d
+												span 2,8
+											td.data-table__d
+												span.black 2
+											td.data-table__d
+												span.black 2
+											td.data-table__d
+												span.black 40
+											td.data-table__d
+												span.black 40
+										tr.data-table__r
+											td.data-table__d
+												span 3,0
+											td.data-table__d
+												span.black 3
+											td.data-table__d
+												span.black 3
+											td.data-table__d
+												span.black 60
+											td.data-table__d
+												span.black 60
+				#matrix.tab
+					span.tab__text matrix
+				#camera.tab
+					span.tab__text camera
+				#battery.tab
+					span.tab__text battery
+				#corps.tab
+					span.tab__text corps
+
+
+

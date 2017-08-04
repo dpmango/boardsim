@@ -1,0 +1,10 @@
+include ../../left-nav/left-nav.pug
+include ../left-side-title/left-side-title.pug
+include ../left-side__list/left-side__list.pug
+
+
+mixin left-side-nav()
+    .left-side.left-side_page_index
+        +left-side-title('Меню', '', 'left-side-title_visiable_false')
+        +leftSide-list()
+        +left-nav()

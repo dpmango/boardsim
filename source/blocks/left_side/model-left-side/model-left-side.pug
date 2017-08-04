@@ -1,0 +1,110 @@
+include ../../spinner-input/spinner-input.pug
+include ../left-side-title/left-side-title.pug
+include ../left-side__list/left-side__list.pug
+
+mixin model-left-side()
+    .left-side.left-side_page_model
+        +left-side-title('Модели и R&D')
+        +leftSide-list()
+        .left-side__body.left-side-body_size_l
+            .model-block
+                .model__item
+                    .model__title
+                        .model__components-title Компоненты
+                        a.model__edit-btn
+                            span.model__name Модель №1
+                            img(src="img/write-icon.png").model__edit-icon
+                    .left-side__inner.left-side__inner_type_select
+                        .left-side__title-block.left-side__title-block_size_l.left-side__title-block_page_model 
+                            .left-side__name Процессор
+                            .left-side__description MHZ
+                        .spinner-input__field-container.spinner-input__field-container_size_xl
+                            .model__nice-select-block
+                                select.form__select.select-style.form__select_min.form__select_type_model
+                                    option(selected) 250
+                                    option 350
+                                    option 400
+                            input.model__input.model__input_size_l(value="40" readonly)
+                            .spinner-input__currency $
+                    .left-side__inner.left-side__inner_type_select
+                        .left-side__title-block.left-side__title-block_size_l.left-side__title-block_page_model
+                            .left-side__name Диагональ
+                            .left-side__description дюймов
+                        .spinner-input__field-container.spinner-input__field-container_size_xl
+                            .model__nice-select-block
+                                select.form__select.select-style.form__select_min.form__select_type_model
+                                    option(selected) 3.5
+                                    option 4.5
+                                    option 5.5
+                            input.model__input.model__input_size_l(value="40" readonly)
+                            .spinner-input__currency $
+                    .left-side__inner.left-side__inner_type_select
+                        .left-side__title-block.left-side__title-block_size_l.left-side__title-block_page_model 
+                            .left-side__name Матрица
+                            .left-side__description тип
+                        .spinner-input__field-container.spinner-input__field-container_size_xl
+                            .model__nice-select-block
+                                select.form__select.select-style.form__select_min.form__select_type_model
+                                    option(selected) IPS
+                                    option TNT
+                                    option TFT
+                            input.model__input.model__input_size_l(value="25" readonly)
+                            .spinner-input__currency $
+                    .left-side__inner.left-side__inner_type_select
+                        .left-side__title-block.left-side__title-block_size_l.left-side__title-block_page_model 
+                            .left-side__name Камера
+                            .left-side__description мегапискселей
+                        .spinner-input__field-container.spinner-input__field-container_size_xl
+                            .model__nice-select-block
+                                select.form__select.select-style.form__select_min.form__select_type_model
+                                    option(selected) 8
+                                    option 12
+                                    option 16
+                            input.model__input.model__input_size_l(value="15" readonly)
+                            .spinner-input__currency $
+                    .left-side__inner.left-side__inner_type_select
+                        .left-side__title-block.left-side__title-block_size_l.left-side__title-block_page_model 
+                            .left-side__name Аккумулятор
+                            
+                        .spinner-input__field-container.spinner-input__field-container_size_xl
+                            .model__nice-select-block
+                                select.form__select.select-style.form__select_min.form__select_type_model
+                                    option(selected) 3000
+                                    option 3500
+                                    option 4000
+                            input.model__input.model__input_size_l(value="15" readonly)
+                            .spinner-input__currency $
+                    .left-side__inner.left-side__inner_type_select
+                        .left-side__title-block.left-side__title-block_size_xs.left-side__title-block_page_model 
+                            .left-side__name Материал корпуса
+                        .spinner-input__field-container.spinner-input__field-container_size_xxl
+                            .model__nice-select-block.model__nice-select-block_size_xl
+                                select.form__select.select-style.form__select_min.form__select_type_model
+                                    option(selected) Пластик
+                                    option Метал
+                                    option Стекло
+                            input.model__input.model__input_size_l(value="15" readonly)
+                            .spinner-input__currency $
+                .model__item
+                    .model__title
+                        .model__components-title.model__component-title_width_full Resersch & Development
+                            .left-side__inner
+                                .left-side__title-block.left-side__title-block_size_l.left-side__title-block_position_middle
+                                    .left-side__name Инвестиции R&D
+                                +spinner-input('spinner-input_size_xl', 5000,50000,5000,1000, "тыс. $",'spinner-input__currency_size_m','spinner-input__field-container_size_m' )
+                                
+                .model__item
+                    .model__price-inner
+                        .model__price-total Мин: 5 000 000$
+                        .model__price-total Мин: 50 000 000$
+                        .model__price-description (общие для всех моделей)  
+            .model-block
+                .model__item.model__item_type_add-panel
+                    a.model__add-btn(href="#")
+                        img(src="img/add-model-icon.png" alt="icon").model__add-icon
+                        span.model__add-btn-text Добавить модель (2/3)
+                    a.model__edit-btn.model__edit-btn_position_center
+                        span.model__name Модель №1
+                        img(src="img/write-icon.png").model__edit-icon
+
+					    

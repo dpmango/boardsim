@@ -1,0 +1,32 @@
+extends layout/main.pug
+include ../blocks/users/users.pug
+include ../blocks/left_side/left-side-nav/left-side-nav.pug
+include ../blocks/modal-password/modal-password.pug
+include ../blocks/left_side/left-side-btn/left-side-btn.pug
+
+block title
+    title Users
+
+block pagecontent
+    .page
+        +header()
+        +left-side-btn()
+        +left-side-nav()
+        +users()
+        +modal-password()
+append scripts
+    script(src='js/lib/niceSelect/jquery.nice-select.min.js')
+    script(src='js/lib/perfect-scrollbar.jquery.min.js')
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,113 @@
+.nav-panel {
+    float: right;
+    overflow: hidden;
+    background-color: #fbfbfb;
+    position: relative;
+}
+
+.nav-panel__list {
+    overflow: hidden;
+}
+
+.nav-panel__item {
+    display: inline-block;
+    height: 74px;
+    border-bottom: 3px solid transparent;
+    vertical-align: middle;
+    padding: 0 40px;
+    font-size: 1.235rem;
+    color: #313d47;
+    font-weight: 400;
+    box-sizing: border-box;
+    text-decoration: none;
+    @media only screen and (max-width: 1440px) {
+        padding: 0 15px;
+        height: 55px;
+    }
+    @media only screen and (max-width: 1550px) {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &:before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        height: 100%;
+    }
+    &:hover {
+        background-color: #fff;
+        border-bottom: 3px solid #4ea1ff;
+        text-decoration: none;
+        color: #313d47;
+    }
+}
+
+.active-tab {
+    border-bottom: 3px solid #c683ff;
+    &:hover {
+        border-bottom: 3px solid #c683ff;
+    }
+}
+
+.nav-panel__item_location_leftside {
+    border-right: 1px solid #eaedf1;
+}
+
+.nav-panel__icon {
+    transition: 0.3s;
+}
+
+.rotate-tab-icon {
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+.nav-panel__item_location_rightside {
+    border-left: 1px solid #eaedf1;
+}
+
+.nav-panel__count {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    background-color: #4ea1ff;
+    border-radius: 50%;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+    margin-left: 8px;
+    padding: 0;
+    line-height: 23px;
+}
+
+.nav-panel__list_type_options {
+    float: left;
+}
+
+.nav-panel__list_type_content {
+    float: right;
+}
+
+.nav-panel__item_location_rightside:last-child {
+    padding-right: 83px;
+}
+
+.nav-panel__btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 57px;
+    width: 37px;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border: none;
+    background-color: #60a6f7;
+    @media only screen and (max-width: 1440px) {
+        width: 27.75;
+        height: 42.75px;
+    }
+}

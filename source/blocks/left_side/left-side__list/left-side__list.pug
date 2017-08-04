@@ -1,0 +1,6 @@
+mixin leftSide-list()
+    .left-side__list
+        each val, index in {'Продукт':'', 'Маркетинг':'marketing.html', 'Персонал': 'personnel.html', 'Финансы':'finance.html', 'Производство':'model.htm', 'Социальная ответственность':'social.html'}
+            a.left-side__list-link(href=val)
+                .left-side__list-item=index
+            

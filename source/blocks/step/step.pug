@@ -1,0 +1,89 @@
+include ../checkbox/checkbox.pug
+include ../tab-list/tab-list.pug
+include ../top-line/top-line.pug
+mixin step()
+	.step.content
+		.content__inner.clearfix
+			+top-line()
+			-
+				var arrTab = [{name: 'Параметры игры', href: '#param', active: ''},
+							{name: 'Ход 0', href: '#step0', active: 'active'},
+							{name: 'Ход 1', href: '#step1', active: ''},
+							{name: 'Ход 2', href: '#step2', active: ''},
+							{name: 'Ход 3', href: '#step3', active: ''},
+							{name: 'Ход 4', href: '#step4', active: ''}]
+			+tab-list(arrTab, 'step__tab-link')
+			.tabs
+				#param.tab
+					span.tab__text param
+				#step0.tab(style={display: "block"})
+					form
+						.group.group_b
+							.group__inner.group__inner_big
+								label.group__lbl.lbl Дата дедлайна:
+								.group__inp.date
+									input.date__inp.inp#deadline-date(type='text', value='')
+									button.btn.date__btn(type="button")
+										img.date__ico(src="img/date.png", srcset= 'img/date@2x.png 2x' )
+						.group
+							.group__inner.group__inner_big
+								label.group__lbl.lbl Поиск по новостям:
+								.group__inp.search-block
+									input.search-block-inpt.inp(type='text', placeholder='Диагональ экрана (Дюйм)')
+									button.search-block__btn.btn(type="submit")
+										img.search-block__ico(src='img/search-icon.png', srcset='img/search-icon@2x.png 2x' alt='icon')
+						.tab__block
+							.list-data
+								.list-data__inner
+									.list-data__cnt
+										+checkbox-group('new1', 'new', 'Забастовки в Китае')
+										+checkbox-group('new2', 'new', 'Финаснвоый кризис')
+										+checkbox-group('new3', 'new', 'Открытие новых полпуроводников')
+										+checkbox-group('new4', 'new', 'Новый вид налогов')
+										+checkbox-group('new5', 'new', 'Открытие платежей в Америку')
+										+checkbox-group('new6', 'new', 'Забастовки в Китае')
+										+checkbox-group('new7', 'new', 'Финаснвоый кризис')
+										+checkbox-group('new8', 'new', 'Открытие новых полпуроводников')
+										+checkbox-group('new9', 'new', 'Новый вид налогов')
+										+checkbox-group('new10', 'new', 'Открытие платежей в Америку')
+							p.list-data__selected Выбрано новостей: 3
+						.tab__grey-block
+							p.tab__grey-block-title Аналитика:
+							.file
+								input#analitic-file.file__inp(type="file" name="")
+								button.file__btn.btn(type="button")
+									| Загрузить файл PDF
+								p.file__value
+							p.tab__grey-block-add Добавленно аналитических статей: 1
+						.params-box
+							.params-box__top.params-box__top_min
+								p.params-box__title Параметры:
+							.data-table.data-table_style2.data-table_height_a.step__table
+								table.data-table__cnt
+									tbody
+										tr.data-table__r
+											td.data-table__d
+												span Максимальная цена
+											td.data-table__d
+												span.black 500
+										tr.data-table__r
+											td.data-table__d
+												span Минимальная цена
+											td.data-table__d
+												span.black 100
+										tr.data-table__r
+											td.data-table__d
+												span Коэффициент наценки аутсорсера на цену
+											td.data-table__d
+												span.black 0,3
+				#step1.tab
+					span.tab__text step1
+				#step2.tab
+					span.tab__text step2
+				#step3.tab
+					span.tab__text step3
+				#step4.tab
+					span.tab__text step4
+
+
+

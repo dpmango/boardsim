@@ -1,0 +1,81 @@
+include ../../spinner-input/spinner-input.pug
+include ../../scale/scale.pug
+
+mixin marketing-model(name)
+    .marketing-model
+        .marketing-model__title=name
+        .model__item
+            .model__item-body 
+                .left-side__item.left-side__item_type_option  
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_lm.left-side__title-block_position_middle
+                            .left-side__name Цена
+                        +spinner-input('spinner-input_size_m', 250,5000,10,10, '$', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')
+                .left-side__item.left-side__item_type_option
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_lm.left-side__title-block_position_middle
+                            .left-side__name Объем выпуска
+                        +spinner-input('spinner-input_size_m', 200,5000,1200,10, 'тыс. шт.', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')
+        .model__item
+            .left-side__item-title Распределение поставок:
+            .model__item-body
+                .left-side__item.left-side__item_type_option
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_lm
+                            .left-side__name Сетевые ретейлеры
+                        +scale('scale_size_xl','network-retail','scale__radio-input_option_aditional', 'scale__block_option_aditional', 'scale__line_option_aditional', 0, 25, 50, 75, 100, "%")
+                    .left-side__item.left-side__item_type_option
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_lm
+                            .left-side__name  Онлайн ретейлеры
+                        +scale('scale_size_xl','online-retail','scale__radio-input_option_aditional', 'scale__block_option_aditional', 'scale__line_option_aditional', 0, 25, 50, 75, 100, "%")
+                    .left-side__item.left-side__item_type_option
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_lm
+                            .left-side__name Сотовые ретейлеры
+                        +scale('scale_size_xl','offline-retail','scale__radio-input_option_aditional', 'scale__block_option_aditional', 'scale__line_option_aditional', 0, 25, 50, 75, 100, "%")   
+        .model__item
+            .left-side__item-title Представленность у дистрибюторов:
+            .model__item-body 
+                .left-side__item.left-side__item_type_option  
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_s.left-side__title-block_position_middle
+                            .left-side__name Сетевые ретейлеры
+                        +spinner-input('spinner-input_size_xl',1200,5000,10,10, 'Макс: 500', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')
+                .left-side__item.left-side__item_type_option
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_s.left-side__title-block_position_middle
+                            .left-side__name Онлайн ретейлеры
+                        +spinner-input('spinner-input_size_xl',1200,5000,10,10, 'Макс: 400', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')
+                .left-side__item.left-side__item_type_option
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_s.left-side__title-block_position_middle
+                            .left-side__name Сотовые ретейлеры
+                        +spinner-input('spinner-input_size_xl',1200,5000,1,1, 'Макс: 800', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')
+        .model__item
+            .left-side__item-title Рекламный бюджет:
+            .model__item-body 
+                .left-side__item.left-side__item_type_option  
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_l.left-side__title-block_position_middle
+                            .left-side__name Телевидение:
+                        +spinner-input('spinner-input_size_xl', 213,500,1,1, 'тыс. $', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')
+                .left-side__item.left-side__item_type_option
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_l.left-side__title-block_position_middle
+                            .left-side__name Интернет:
+                        +spinner-input('spinner-input_size_xl' ,875,5000,10,10, 'тыс. $', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')
+                .left-side__item.left-side__item_type_option
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_l.left-side__title-block_position_middle
+                            .left-side__name Телевидение:
+                        +spinner-input('spinner-input_size_xl', 187,1000,1,1, 'тыс. $', 'spinner-input__currency_size_m', 'spinner-input__field-container_size_m')   
+        .model__item
+            .left-side__item-title Рекламный бюджет:
+            .model__item-body
+                .left-side__item.left-side__item_type_option
+                    .left-side__inner.left-side__inner_type_option
+                        .left-side__title-block.left-side__title-block_size_lm
+                            .left-side__name Срок гарантии
+                        +scale('scale_size_xl scale_type_guaranty','network-retail','scale__radio-input_option_aditional', 'scale__block_option_aditional', 'scale__line_option_aditional', 0, 25, 50, 75, 100, "%")
+

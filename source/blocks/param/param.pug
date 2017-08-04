@@ -1,0 +1,5 @@
+mixin param(img, bigImg, text, count, paramClass)
+	.param(class=paramClass)
+		img.param__img(src=img, srcset=bigImg, alt="")
+		p.param__text=text
+		p.param__count=count

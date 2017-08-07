@@ -1,6 +1,7 @@
-mixin tab-list(arrTab, className)
+mixin tab-list(arrTab, className, withoutAdd)
 	.tab-list
 		each item in arrTab
 			a(href=item.href, class=item.active + ' ' + className + ' tab-list__link' )=item.name
-		button.btn.tab-list__add(type="button")
-			span.add-circle
+		if(!withoutAdd)
+			button.btn.tab-list__add(type="button")
+				span.add-circle

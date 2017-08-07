@@ -1,0 +1,18 @@
+include ../tab-list/tab-list.pug
+
+mixin account-panel()
+	.account-panel
+		.account-panel__cnt.container-block
+			mixin account-panel-list(arrTab)
+				.account-panel__list
+					each item in arrTab
+						a(href=item.href, class=item.active  + ' account-panel__it' )=item.name
+
+			-
+				var arrTab = [{name: 'Материалы', href: '#material', active: 'active'},
+							{name: 'График принятия решений', href: '#chart', active: ''},
+							{name: 'Назначения', href: '#purpose', active: ''},
+							{name: 'Название компании', href: '#name', active: ''}]
+
+			+account-panel-list(arrTab)
+

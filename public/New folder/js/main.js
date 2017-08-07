@@ -10,12 +10,16 @@ $(document).ready(function() {
         $(this).siblings('.marketing-list__box-model-container').slideToggle();
     });
 
+    $('.left-side-btn').click(function() {
+        $('.left-side').toggleClass('left-side__mobile');
+        $(this).find('img').toggleClass('left-side-btn__rotate');
+        $(this).toggleClass('left-side__opened');
+    })
+
     if ($('.form__select').length) {
         $('.form__select').niceSelect();
     }
-    if ($('.marketing-list').length) {
-        $('.marketing-list').perfectScrollbar();
-    }
+
     if ($('.left-side-body_type_scroll').length) {
         $('.left-side-body_type_scroll').perfectScrollbar({
             suppressScrollX: true
@@ -35,19 +39,62 @@ $(document).ready(function() {
             suppressScrollX: true
         });
     };
-    $('.widget__title-arrow').click(function(e) {
+    $('.widget__title').on('click', function(e) {
+
         e.preventDefault();
-        $(this).parents('.widget__title').next().slideToggle();
-        $(this).parents('.widget').toggleClass('widget_height_auto');
-        $(this).children().toggleClass('rotate');
-        setHeight();
+
+        if (e.target == this ||
+            e.target == $(this).find('.widget__title-arrow')[0] ||
+            e.target == $(this).find('.widget__title-arrow-ico')[0] ||
+            e.target == $(this).find('.widget__title-txt')[0]) {
+
+            $(this).parent().toggleClass('widget_close');
+            $(this).next().slideToggle();
+            $(this).parents('.widget').toggleClass('widget_height_auto');
+            $(this).find('.widget__title-arrow-ico').toggleClass('rotate');
+
+        }
+
     });
     $('.left-nav__title').click(function() {
         $(this).next().slideToggle('slow');
+
+    });
+    $('.right-side__body-inner').perfectScrollbar({
+        suppressScrollX: true
+    });
+
+    $('.nav-panel__item_location_rightside').click(function(e) {
+        e.preventDefault();
+        $('.nav-panel__item_location_rightside').removeClass('active-tab');
+        $(this).addClass('active-tab');
+        $('.right-side__container').removeClass('active-right-side');
+        if ($('#chat-switch').hasClass("active-tab")) {
+            $('#chat').addClass('active-right-side')
+        }
+        if ($('#news-switch').hasClass("active-tab")) {
+            $('#news').addClass('active-right-side')
+        }
+        openRightSide()
+    });
+
+
+    $('.nav-panel__btn').click(function() {
+        var rightSide = $('.right-side').width();
+        $('.nav-panel__icon').toggleClass('rotate-tab-icon');
+        if (rightSide) {
+            closeRightSide();
+
+        } else {
+            $('.nav-panel__item_location_rightside').removeClass('active-tab');
+            $('#chat-switch').addClass('active-tab');
+            $('#chat').addClass('active-right-side');
+            openRightSide()
+
+        }
     });
     (function() {
         var marketingModels = $('.marketing-list__box-model');
-
         if (marketingModels.length) {
             marketingModels.owlCarousel({
                 loop: true,
@@ -60,16 +107,31 @@ $(document).ready(function() {
             });
         }
     })();
-    setHeight();
+    leftSideSetPosition();
     $(window).on('resize', function() {
-        setHeight();
+        if ($(window).innerWidth() > 1199) {
+            $('.left-side').removeClass('left-side__mobile');
+            $('.left-side-btn').find('img').removeClass('left-side-btn__rotate');
+            $('.left-side-btn').removeClass('left-side__opened');
+
+        }
         removeRotate();
         setWidth();
+        setRightSideWidth();
+        leftSideSetPosition();
+
     });
+    $('.modal').on('show.bs.modal', function(e) {
+        console.count();
+        setRightSideWidth();
+        setWidth();
+    });
+
     $('.left-side-title__block').click(function() {
         $('.left-side-title__icon').toggleClass('rotate');
         $(this).parent().next().slideToggle();
-    })
+
+    });
     removeRotate();
     $('.modal-help__question-title').click(function() {
         $(this).next().slideToggle();
@@ -78,35 +140,104 @@ $(document).ready(function() {
     setWidth();
 });
 
-function setWidth() {
-    var windowWidth = $(window).width();
+function openRightSide() {
+    var windowWidth = window.innerWidth;
     var leftSideWidth = $('.left-side').width();
-    $('.nav-panel').width(windowWidth - leftSideWidth);
-    $('.content').width(windowWidth - leftSideWidth);
+    var rightSide = $('.right-side').width();
+    var rightNavPanel = $('.nav-panel__list_type_content').width();
+
+    if (windowWidth > 1199) {
+        $('.right-side').animate({
+            opacity: 1,
+            width: String(rightNavPanel)
+        }, 300, function() {
+
+        });
+        $('.content').animate({
+            width: String($('body').width() - leftSideWidth - rightNavPanel)
+        }, 300)
+    } else {
+        $('.right-side').animate({
+            opacity: 1,
+            width: String(rightNavPanel)
+        }, 300, function() {
+
+        });
+    }
+}
+
+function closeRightSide() {
+    $('.nav-panel__item_location_rightside').removeClass('active-tab');
+    $(this).find('.nav-panel__icon').removeClass('rotate-tab-icon');
+
+    var rightSide = $('.right-side').width();
+    var windowWidth = window.innerWidth;
+    var leftSideWidth = $('.left-side').width();
+    if (rightSide) {
+        if (windowWidth > 1199) {
+            $('.right-side').animate({
+                width: "0"
+            }, 300);
+            $('.content').animate({
+                width: String($('body').width() - leftSideWidth)
+            }, 300)
+        } else {
+            $('.right-side').animate({
+                width: "0"
+            }, 300);
+
+        }
+        // $('.right-side__container').removeClass('active-right-side');
+    }
+}
+
+function setRightSideWidth() {
+    var rightSide = $('.right-side');
+    var rightNavPanel = $('.nav-panel__list_type_content').width();
+    var windowWidth = window.innerWidth;
+    if (rightSide.width()) {
+        rightSide.width(rightNavPanel);
+    }
+}
+
+// function setHeight() {
+
+//     var header = $('.header').height();
+//     var navPanel = $('.nav-panel').height() ? $('.nav-panel').height() : 0;
+//     $('.right-side__body-inner').height($(window).height() - header - navPanel - 300);
+
+// }
+
+function setWidth() {
+    var windowWidth = window.innerWidth
+    var leftSideWidth = $('.left-side').width() ? $('.left-side').width() : 0;
+    var rightSide = $('.right-side').width() ? $('.right-side').width() : 0;
+    var rightNavPanel = $('.nav-panel__list_type_content').width() ? $('.nav-panel__list_type_content').width() : 0;
+    if (windowWidth >= 1200) {
+        $('.nav-panel').width($('body').width() - leftSideWidth);
+        if (rightSide) {
+            $('.content').width($('body').width() - leftSideWidth - rightNavPanel);
+        } else {
+            $('.content').width($('body').width() - leftSideWidth);
+        }
+    } else {
+        $('.content').width('100%');
+        $('.nav-panel').width('100%');
+    }
 }
 
 function removeRotate() {
-    if ($(window).width() > 1024) {
+    if ($(window).width() > 1199) {
         $('.left-side-title__icon').removeClass('rotate');
     }
 }
 
-function setHeight() {
 
-    var content = $('.content').height();
-    var leftSide = $('.left-side').height();
-    var navPanel = $('.nav-panel').length ? $('.nav-panel').height() : 0;
-    if (window.innerWidth > 1024) {
-        if (content > leftSide) {
-            $('.left-side').height(content + navPanel);
-            $('content').css('min-height', new String(leftSide - navPanel));
-        } else {
-            $('content').css('min-height', new String(leftSide - navPanel));
-            $('.left-side').height(content + navPanel);
-        }
-    } else {
-        $('.content').height('auto');
-        $('.left-side').height('auto');
+function leftSideSetPosition() {
+    if (window.innerWidth < 1200) {
+        var header = $('.header').innerHeight();
+        $('.left-side').css('top', String(header + 'px'));
+        $('.left-side-btn').css('top', String(header + 'px'));
     }
 }
 

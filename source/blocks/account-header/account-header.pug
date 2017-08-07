@@ -1,0 +1,24 @@
+include ../user-icon/user-icon.pug
+include ../help-icon/help-icon.pug
+include ../logout-icon/logout-icon.pug
+
+mixin account-header()
+	.account-header
+		.account-header__cnt.container-block
+			.col-logo
+				a.logo(href="")
+					img.logo__img(src="img/logo2.png", srcset="img/logo2@2x.png 2x", alt="Company")
+					span.logo__text
+						h1.logo__name Название компании
+						p.logo__desc Промышленная индустрия  / Демо
+			.col-links
+				.links-list
+					a.links-list__it(href="")
+						+help-icon('links-list__icon')
+						span.links-list__txt Техническая <br /> поддержка
+					a.links-list__it(href="")
+						+user-icon('links-list__icon')
+						span.links-list__txt Личный <br /> кабинет
+					a.links-list__it(href="")
+						+logout-icon('links-list__icon')
+						span.links-list__txt Выход

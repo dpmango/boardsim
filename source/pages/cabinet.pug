@@ -1,0 +1,16 @@
+extends layout/main.pug
+include  ../blocks/cabinet/cabinet.pug
+include ../blocks/account-header/account-header.pug
+include ../blocks/account-panel/account-panel.pug
+
+block title
+    title Cabinet
+
+block pagecontent
+    .page
+        +account-header()
+        +account-panel()
+        +cabinet()
+
+append scripts
+    script(src='js/lib/perfect-scrollbar.jquery.min.js')

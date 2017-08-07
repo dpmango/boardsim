@@ -1,0 +1,124 @@
+.cabinet-widget__envelope {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 12px;
+  margin-right: 5px;
+  @media (max-width: 1440px) {
+    margin-right: 0;
+    margin-left: 5px;
+  }
+}
+.message-table{
+  padding: 35px 22px 18px;
+  @media (max-width: 1440px) {
+    padding: 15px;
+  }
+}
+.message-table__table {
+  width: 100%;
+  transition: .4s ease-in-out;
+}
+.message-table__cnt_hidden {
+  display: none;
+  .message-table__it:first-child {
+    border-top: 0;
+  }
+
+}
+.message-table__it {
+  background: #FBFBFB;
+  border: 1px solid #EAEDF0;
+  border-top: 0px;
+  &:first-child {
+    border-top: 1px solid #EAEDF0;
+  }
+  &:nth-child(n+6) {
+    display: none;
+  }
+  &.active {
+    .email-icon {
+      fill: #60A7F8;
+    }
+    .message-table__name {
+      font-weight: 700;
+      color: black;
+    }
+  }
+}
+.message-table__d {
+  padding: 13px 5px;
+  @media (max-width: 1600px) {
+    padding: 7px 5px;
+  }
+}
+.message-table__d_right {
+  text-align: right;
+  padding-right: 28px;
+  @media (max-width: 1600px) {
+    padding-right: 20px;
+  }
+}
+.message-table__d_ico {
+  width: 70px;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+  @media (max-width: 1600px) {
+    width: 60px;
+  }
+}
+.message-table__name {
+  color: #313d47;
+  font-size: 1rem;
+}
+.message-table__date {
+  font-size: 1.1rem;
+  color: #b2b5c1;
+}
+
+.message-table__btn {
+  display: block;
+  padding: 0;
+  margin: 10px auto;
+  width: 17px;
+  box-shadow: none;
+  transform: rotateX(0deg);
+  &.active {
+    box-shadow: none;
+    transform: rotateX(180deg);
+  }
+}
+.message-table__btn-img {
+  width: 100%;
+  @media (max-width: 1440px ) {
+    width: 14px;
+  }
+}
+
+
+
+
+.count-circle {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  line-height: 24px;
+  display: inline-block;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: .9rem;
+  @media (max-width: 1440px) {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: 0 2px;
+  }
+}
+.count-circle_red {
+  background: #ea475f;
+}
+.count-circle_blue {
+ background: #4ea1ff;
+}

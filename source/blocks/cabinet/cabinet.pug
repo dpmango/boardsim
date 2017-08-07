@@ -1,0 +1,119 @@
+include ../deadline/deadline.pug
+mixin cabinet()
+	.tabs.container-block
+		.tab.cabinet-tab(style="display:block")#material
+			.cabinet__content
+				.content__cnt.clearfix
+					.content__cols
+						.content__col
+							.cabinet-widget
+								.cabinet-widget__title
+									.cabinet-widget__title-txt Отчеты и аналитика
+									.cabinet-widget__title-h
+										svg(viewbox='0 0 32 32', width="40",  xmlns='http://www.w3.org/2000/svg')
+											g#_329-Document_Report(data-name='329-Document Report')
+												polygon.cls-1(points='10 1 4 7 4 31 28 31 28 1 10 1')
+												polyline.cls-1(points='10 1 10 7 4 7')
+												polyline.cls-1(points='9 12 9 26 24 26')
+												polyline.cls-1(points='9 26 16 19 19 22 24 17')
+								.cabinet-widget__body
+									.cabinet-widget__tab-panel
+										.cabinet-widget__tab-btn#decision.cabinet-widget__tab-btn_state_active Перейти к Решениям
+										.cabinet-widget__tab-btn#video-learning
+											span.play-video
+											span.cabinet-widget__tab-btn-text Видео обучение
+										.cabinet-widget__tab-btn#video-analitic
+											span.play-video
+											span.cabinet-widget__tab-btn-text Видео и аналитика
+									.cabinet-widget__tab.cabinet-widget__tab_state_active#table-content
+										.cabinet-widget__table-container
+											table.cabinet-widget__table-one
+												tr.cabinet-widget__table-title
+													th Co-manager
+													th Последний вход
+													th Последнее сохранение
+												tr.cabinet-widget__table-body
+													td kemmer_shanny@hotmail.com
+													td 06-16-2017
+													td 12-26-2017
+												tr.cabinet-widget__table-body
+													td kling.lavinia@adams.org
+													td 06-16-2017
+													td 12-26-2017
+												tr.cabinet-widget__table-body
+													td lance_ferry@yahoo.com
+													td 06-16-2017
+													td 12-26-2017
+												tr.cabinet-widget__table-body
+													td zemlak.johnathan@joyce.org
+													td 06-16-2017
+													td 12-26-2017
+										.cabinet-widget__table-link
+											a(href="#").cabinet-widget__table-link-text Смотреть все
+									.cabinet-widget__tab#video-learning-content Video learning
+									.cabinet-widget__tab#video-analitic-content Video analitics
+							.cabinet-widget.cabinet-widget-table
+								.cabinet-widget__title
+									.cabinet-widget__title-txt Доска результатов
+								.cabinet-widget__body
+									.cabinet-widget__table-container.cabinet-widget__table-container_type_second
+										table.cabinet-widget__table-one
+											tr.cabinet-widget__table-title
+												th Co-manager
+												th Последний вход
+												th Последнее сохранение
+											tr.cabinet-widget__table-body
+												td kemmer_shanny@hotmail.com
+												td 06-16-2017
+												td 12-26-2017
+											tr.cabinet-widget__table-body
+												td kling.lavinia@adams.org
+												td 06-16-2017
+												td 12-26-2017
+											tr.cabinet-widget__table-body
+												td lance_ferry@yahoo.com
+												td 06-16-2017
+												td 12-26-2017
+											tr.cabinet-widget__table-body
+												td zemlak.johnathan@joyce.org
+												td 06-16-2017
+												td 12-26-2017}
+
+						.content__col
+							+deadline()
+							.cabinet-widget.cabinet-widget-table
+								.cabinet-widget__title
+									.cabinet-widget__title-txt Прогноз ключевых показателей
+								.cabinet-widget__body
+									.cabinet-widget__table-container.cabinet-widget__table-container_type_second
+												table.cabinet-widget__table-one
+													tr.cabinet-widget__table-title
+														th Co-manager
+														th Последний вход
+														th Последнее сохранение
+													tr.cabinet-widget__table-body
+														td kemmer_shanny@hotmail.com
+														td 06-16-2017
+														td 12-26-2017
+													tr.cabinet-widget__table-body
+														td kling.lavinia@adams.org
+														td 06-16-2017
+														td 12-26-2017
+													tr.cabinet-widget__table-body
+														td lance_ferry@yahoo.com
+														td 06-16-2017
+														td 12-26-2017
+													tr.cabinet-widget__table-body
+														td zemlak.johnathan@joyce.org
+														td 06-16-2017
+														td 12-26-2017
+
+		.tab.cabinet-tab#chart
+			.cabinet__content
+				.content__cnt.clearfix chart
+		.tab.cabinet-tab#purpose
+			.cabinet__content
+				.content__cnt.clearfix purpose
+		.tab.cabinet-tab#name
+			.cabinet__content
+				.content__cnt.clearfix name

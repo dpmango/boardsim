@@ -2,8 +2,8 @@
     width: 0px;
     min-height: 100vh;
     float: right;
-    box-shadow: 0 7px 13px rgba(31, 70, 110, 0.04), 0 7px 27px rgba(128, 142, 177, 0.09);
-    background-color: #eef1f4;
+    box-shadow: 0 rgba(31, 70, 110, 0.04);
+    background-color: #f5f7fb;
     @media only screen and (max-width: 1199px) {
         position: absolute;
         right: 0;
@@ -31,9 +31,7 @@
     position: relative;
 }
 
-.right-side__body {
-    margin-bottom: 12px;
-}
+.right-side__body {}
 
 .right-side__image-details {
     opacity: 0;

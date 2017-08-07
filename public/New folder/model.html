@@ -8,755 +8,837 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header class="header clearfix">
-      <div class="header__col-logo">
-        <div class="header__logo"><a class="header__logo-link" href="index.html"><img class="header__logo-img" src="img/logo.png" alt="logo"/></a></div>
-      </div>
-      <div class="header__col-info">
-        <div class="header__info clearfix">
-          <div class="header__info-company">
-            <div class="header__info-cnt"><span class="header__info-txt">Компания</span><span class="header__info-val">Tesla Motors</span></div>
-          </div>
-          <div class="header__info-gamer">
-            <div class="header__info-cnt"><span class="header__info-txt">Игрок</span><span class="header__info-val">Алексей</span></div>
-          </div>
-          <div class="header__info-year">
-            <div class="header__info-cnt"><span class="header__info-txt">Год</span><span class="header__info-val">2018</span></div>
-            <button class="header__info-btn btn" type="button"><img src="img/reload.png" alt="icon"/></button>
-          </div>
-          <div class="header__info-step">
-            <div class="header__info-cnt"><span class="header__info-txt text-center">Ход</span><span class="header__info-val text-center"> 28</span></div>
-            <button class="header__info-btn header__info-btn_prev btn" type="button"><img src="img/left-arrow.png" alt="icon"/></button>
-            <button class="header__info-btn btn" type="button"><img src="img/right-arrow.png" alt="icon"/></button>
-          </div>
+    <div class="page">
+      <header class="header clearfix">
+        <div class="header__col-logo">
+          <div class="header__logo"><a class="header__logo-link" href="index.html"><img class="header__logo-img" src="img/logo.png" srcset="img/logo@2x.png 2x" alt="logo"/><img class="header__logo-img header__logo-img_min" src="img/min-logo.png" srcset="img/logo@2x.png 2x" alt="logo"/></a></div>
         </div>
-      </div>
-      <div class="header__col-menu">
-        <div class="header__menu clearfix">
-          <div class="header__menu-edit"><a class="header__menu-link" href="">
-              <div class="header__menu-img-wrap"><img class="header__menu-img" src="img/users-icon.png" alt="icon"/></div><span class="header__menu-text">Совместное редактирование</span></a></div>
-          <div class="header__menu-decision"><a class="header__menu-link" href="">
-              <div class="header__menu-img-wrap"><img class="header__menu-img" src="img/cloud-icon.png" alt="icon"/></div><span class="header__menu-text">Решение</span></a></div>
-          <div class="header__menu-help"><a class="header__menu-link" href="#modal-help" data-toggle="modal" data-target="#modal-help">
-              <div class="header__menu-img-wrap"><img class="header__menu-img" src="img/questions-icon.png" alt="icon"/></div><span class="header__menu-text">Справка</span></a></div>
-          <div class="header__menu-cabinet"><a class="header__menu-link" href="#password-modal" data-toggle="modal" data-target="#password-modal">
-              <div class="header__menu-img-wrap"><img class="header__menu-img" src="img/user-icon.png" alt="icon"/></div><span class="header__menu-text">Личный кабинет</span></a></div>
-        </div>
-      </div>
-    </header>
-    <div class="left-side left-side_page_model">
-      <div class="left-side-title">
-        <div class="left-side-title__block">Модели и R&amp;D<img class="left-side-title__icon" src="img/chevron-down.png"/></div>
-      </div>
-      <div class="left-side__body left-side-body_size_l">
-        <div class="model-block">
-          <div class="model__item">
-            <div class="model__title">
-              <div class="model__components-title">Компоненты</div>
-              <div class="model__edit-btn"><span class="model__name">Модель №1</span><img class="model__edit-icon" src="img/write-icon.png"/></div>
+        <div class="header__col-info">
+          <div class="header__info clearfix">
+            <div class="header__info-company">
+              <div class="header__info-cnt"><span class="header__info-txt">Компания</span><span class="header__info-val">Tesla Motors</span></div>
             </div>
-            <div class="left-side__inner left-side__inner_type_option">
-              <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_page_model"> 
-                <div class="left-side__name">Процессор</div>
-                <div class="left-side__description">MHZ</div>
-              </div>
-              <div class="spinner-input__field-container spinner-input__field-container_size_xl">
-                <div class="model__nice-select-block">
-                  <select class="form__select select-style form__select_min form__select_type_model">
-                    <option selected="selected">250</option>
-                    <option>350</option>
-                    <option>400</option>
-                  </select>
-                </div>
-                <input class="model__input model__input_size_l" value="40" readonly="readonly"/>
-                <div class="spinner-input__currency">$</div>
-              </div>
+            <div class="header__info-gamer">
+              <div class="header__info-cnt"><span class="header__info-txt">Игрок</span><span class="header__info-val">Алексей</span></div>
             </div>
-            <div class="left-side__inner left-side__inner_type_option">
-              <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_page_model">
-                <div class="left-side__name">Диагональ</div>
-                <div class="left-side__description">дюймов</div>
-              </div>
-              <div class="spinner-input__field-container spinner-input__field-container_size_xl">
-                <div class="model__nice-select-block">
-                  <select class="form__select select-style form__select_min form__select_type_model">
-                    <option selected="selected">3.5</option>
-                    <option>4.5</option>
-                    <option>5.5</option>
-                  </select>
-                </div>
-                <input class="model__input model__input_size_l" value="40" readonly="readonly"/>
-                <div class="spinner-input__currency">$</div>
-              </div>
+            <div class="header__info-year">
+              <div class="header__info-cnt"><span class="header__info-txt">Год</span><span class="header__info-val">2018</span></div>
+              <button class="header__info-btn header__info-btn_repeat btn" type="button">
+                <svg class="btn-icon" id="repeat-icon" version="1.1" width="33px" viewbox="0 0 128 128" xml:space="preserve">
+                  <path class="icon-el" d="M18.233,81.666l-0.016,0.003c0.006,0.012,0.01,0.022,0.016,0.036c0.008,0.101,0.026,0.195,0.04,0.293   c0.002,0.017,0,0.029,0.002,0.045l3.929,25.514c0.476,3.098,3.374,5.221,6.47,4.743c3.098-0.476,5.222-3.372,4.746-6.471   l-0.611-3.965c0.712,0.587,1.43,1.169,2.175,1.714c10.106,7.42,23.111,10.987,36.486,8.926c13.372-2.056,24.702-9.37,32.109-19.487   c3.662-4.988,6.353-10.695,7.922-16.793l-15.479-4.262c-1.044,4.191-2.882,8.109-5.405,11.552   c-5.012,6.824-12.566,11.713-21.593,13.105c-9.027,1.388-17.705-1.002-24.536-6.004c-0.841-0.616-1.645-1.282-2.424-1.976   l4.488,0.435c2.872,0.276,5.445-2.025,5.748-5.144c0.3-3.12-1.783-5.873-4.655-6.15l-23.659-2.291   c-2.568-0.248-4.884,1.572-5.564,4.188c-0.05,0.185-0.076,0.374-0.109,0.565c-0.021,0.132-0.061,0.255-0.074,0.39   c-0.004,0.041,0.002,0.077-0.001,0.114c-0.013,0.174-0.004,0.351-0.002,0.528C18.235,81.406,18.224,81.539,18.233,81.666z" fill="#232323"></path>
+                  <path class="icon-el" d="M109.767,46.334l0.015-0.002c-0.006-0.013-0.01-0.024-0.016-0.037c-0.008-0.1-0.027-0.195-0.04-0.293   c-0.002-0.015,0-0.029-0.002-0.044l-3.928-25.513c-0.477-3.097-3.373-5.221-6.472-4.744c-3.097,0.477-5.221,3.373-4.744,6.47   l0.612,3.967c-0.715-0.587-1.433-1.169-2.177-1.715c-10.106-7.419-23.112-10.989-36.484-8.926   c-13.374,2.055-24.703,9.371-32.109,19.487c-3.664,4.989-6.355,10.696-7.922,16.794l15.479,4.26   c1.042-4.19,2.882-8.108,5.403-11.551c5.012-6.824,12.569-11.712,21.595-13.105c9.027-1.386,17.703,1.002,24.536,6.002   c0.841,0.618,1.645,1.284,2.423,1.976l-4.487-0.434c-2.872-0.278-5.445,2.026-5.747,5.144c-0.303,3.119,1.782,5.873,4.653,6.15   l23.659,2.291c2.568,0.248,4.884-1.572,5.564-4.188c0.05-0.184,0.076-0.374,0.107-0.565c0.022-0.132,0.063-0.255,0.075-0.391   c0.006-0.038-0.003-0.075,0-0.112c0.014-0.175,0.007-0.353,0.003-0.53C109.764,46.595,109.774,46.462,109.767,46.334z" fill="#232323"></path>
+                </svg>
+              </button>
             </div>
-            <div class="left-side__inner left-side__inner_type_option">
-              <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_page_model"> 
-                <div class="left-side__name">Матрица</div>
-                <div class="left-side__description">тип</div>
-              </div>
-              <div class="spinner-input__field-container spinner-input__field-container_size_xl">
-                <div class="model__nice-select-block">
-                  <select class="form__select select-style form__select_min form__select_type_model">
-                    <option selected="selected">IPS</option>
-                    <option>TNT</option>
-                    <option>TFT</option>
-                  </select>
-                </div>
-                <input class="model__input model__input_size_l" value="25" readonly="readonly"/>
-                <div class="spinner-input__currency">$</div>
-              </div>
-            </div>
-            <div class="left-side__inner left-side__inner_type_option">
-              <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_page_model"> 
-                <div class="left-side__name">Камера</div>
-                <div class="left-side__description">мегапискселей</div>
-              </div>
-              <div class="spinner-input__field-container spinner-input__field-container_size_xl">
-                <div class="model__nice-select-block">
-                  <select class="form__select select-style form__select_min form__select_type_model">
-                    <option selected="selected">8</option>
-                    <option>12</option>
-                    <option>16</option>
-                  </select>
-                </div>
-                <input class="model__input model__input_size_l" value="15" readonly="readonly"/>
-                <div class="spinner-input__currency">$</div>
-              </div>
-            </div>
-            <div class="left-side__inner left-side__inner_type_option">
-              <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_page_model"> 
-                <div class="left-side__name">Аккумулятор</div>
-              </div>
-              <div class="spinner-input__field-container spinner-input__field-container_size_xl">
-                <div class="model__nice-select-block">
-                  <select class="form__select select-style form__select_min form__select_type_model">
-                    <option selected="selected">3000</option>
-                    <option>3500</option>
-                    <option>4000</option>
-                  </select>
-                </div>
-                <input class="model__input model__input_size_l" value="15" readonly="readonly"/>
-                <div class="spinner-input__currency">$</div>
-              </div>
-            </div>
-            <div class="left-side__inner left-side__inner_type_option">
-              <div class="left-side__title-block left-side__title-block_size_m left-side__title-block_page_model"> 
-                <div class="left-side__name">Материал корпуса</div>
-              </div>
-              <div class="spinner-input__field-container spinner-input__field-container_size_xxl">
-                <div class="model__nice-select-block model__nice-select-block_size_l">
-                  <select class="form__select select-style form__select_min form__select_type_model">
-                    <option selected="selected">Пластик</option>
-                    <option>Метал</option>
-                    <option>Стекло</option>
-                  </select>
-                </div>
-                <input class="model__input model__input_size_xl" value="15" readonly="readonly"/>
-                <div class="spinner-input__currency">$</div>
-              </div>
-            </div>
-          </div>
-          <div class="model__item">
-            <div class="model__title">
-              <div class="model__components-title model__component-title_width_full">Resersch & Development
-                <div class="left-side__inner">
-                  <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_position_middle">
-                    <div class="left-side__name">Инвестиции R&D</div>
-                  </div>
-                  <div class="spinner-input spinner-input_position_middle spinner-input_size_xl">
-                    <div class="spinner-input__field-container spinner-input__field-container_size_m">
-                      <input class="spinner-input__field" type="text" value="5000" readonly="readonly"/><img class="spinner-input__btn spinner-input__btn_arrow_up" src="img/spinner-up.png" alt="icon" onclick="addCount(this,50000,1000)"/><img class="spinner-input__btn spinner-input__btn_arrow_bottom" src="img/spinner-down.png" alt="icon" onclick="minusCount(this,5000,1000)"/>
-                    </div>
-                    <div class="spinner-input__currency spinner-input__currency_size_m">тыс. $</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="model__item">
-            <div class="model__price-inner">
-              <div class="model__price-total">Мин: 5 000 000$</div>
-              <div class="model__price-total">Мин: 50 000 000$</div>
-              <div class="model__price-description">(общие для всех моделей)  </div>
+            <div class="header__info-step">
+              <div class="header__info-cnt"><span class="header__info-txt text-center">Ход</span><span class="header__info-val text-center"> 28</span></div>
+              <button class="header__info-btn header__info-btn_prev btn" type="button">
+                <svg class="arrow-icon" id="left-icon" enable-background="new -0.8 -0.3 23 27" width="33px" version="1.1" viewbox="-0.8 -0.3 23 27" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path class="icon-el" clip-rule="evenodd" d="M21.9,15c0,0-8.7,9.9-9.5,11c-0.9,1.1-2.3,0.3-2.3,0.3  s-8.8-9.7-9.8-11.4C-0.7,13.3,1.2,13,1.2,13H6V1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v12h4.7C23.1,13,21.9,15,21.9,15z" fill="#0D0D0D" fill-rule="evenodd"></path>
+                </svg>
+              </button>
+              <button class="header__info-btn header__info-btn_next btn" type="button">
+                <svg class="arrow-icon" id="right-icon" enable-background="new -0.8 -0.3 23 27" width="33px" version="1.1" viewbox="-0.8 -0.3 23 27" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path class="icon-el" clip-rule="evenodd" d="M21.9,15c0,0-8.7,9.9-9.5,11c-0.9,1.1-2.3,0.3-2.3,0.3  s-8.8-9.7-9.8-11.4C-0.7,13.3,1.2,13,1.2,13H6V1c0-0.6,0.4-1,1-1h8c0.6,0,1,0.4,1,1v12h4.7C23.1,13,21.9,15,21.9,15z" fill="#0D0D0D" fill-rule="evenodd"></path>
+                </svg>
+              </button>
             </div>
           </div>
         </div>
-        <div class="model-block">
-          <div class="model__item model__item_type_add-panel"><a class="model__add-btn" href="#"><img class="model__add-icon" src="img/add-model-icon.png" alt="icon"/><span class="model__add-btn-text">Добавить модель (2/3)</span></a>
-            <div class="model__edit-btn model__edit-btn_position_center"><span class="model__name">Модель №1</span><img class="model__edit-icon" src="img/write-icon.png"/></div>
+        <div class="header__col-menu">
+          <div class="header__menu clearfix">
+            <div class="header__menu-edit"><a class="header__menu-link" href="">
+                <div class="header__menu-img-wrap">
+                  <svg class="menu-icon" id="users-icon" version="1.1" width="33px" x="0px" y="0px" viewbox="0 0 128 128" xml:space="preserve">
+                    <path d="M74.163,91.965c-3.773-1.887-10.04-5.02-11.564-6.457c6.373-7.824,10.064-16.664,10.064-24.398								  c0-5.25,0-11.785-2.938-17.611C67.076,38.254,61.158,32,47.998,32c-13.158,0-19.075,6.254-21.724,11.498								  c-2.942,5.826-2.942,12.361-2.942,17.611c0,7.738,3.69,16.574,10.062,24.398c-1.521,1.441-7.79,4.574-11.56,6.457								  c-7.47,3.738-12.214,6.211-15.049,9.043c-6.278,6.281-6.751,16.82-6.784,18.867c-0.035,2.145,0.795,4.211,2.297,5.734								  C3.8,127.137,5.855,128,8,128h79.997c2.146,0,4.192-0.863,5.7-2.391c1.504-1.523,2.336-3.59,2.297-5.734								  c-0.031-2.047-0.504-12.586-6.782-18.867C86.376,98.176,81.633,95.703,74.163,91.965z M7.998,120.008								  c0.055-3.359,1.053-9.949,4.444-13.344c1.963-1.961,6.614-4.363,12.967-7.543c7.519-3.754,11.455-5.879,13.482-7.801l5.395-5.102								  L39.6,80.461c-5.254-6.453-8.269-13.508-8.269-19.352c0-4.633,0-9.881,2.082-14.004C35.828,42.324,40.6,40,47.998,40								  c7.399,0,12.172,2.324,14.586,7.104c2.083,4.125,2.083,9.373,2.083,14.006c0,5.844-3.012,12.895-8.271,19.352l-4.69,5.762								  l5.401,5.102c2.023,1.914,5.958,4.035,13.479,7.793c6.353,3.184,11.009,5.586,12.971,7.547c3.398,3.402,4.391,9.984,4.441,13.336								  L7.998,120.008z M121.213,69.008c-2.833-2.832-7.575-5.305-15.049-9.043c-3.771-1.887-10.041-5.018-11.561-6.455								  c6.368-7.826,10.064-16.664,10.064-24.4c0-5.25,0-11.785-2.942-17.611C99.077,6.254,93.158,0,80,0S60.923,6.254,58.274,11.498								  C55.534,16.926,55.348,22.953,55.336,28h8.005c0.016-4.35,0.156-9.092,2.074-12.895C67.826,10.324,72.601,8,80,8								  s12.17,2.324,14.584,7.104c2.082,4.125,2.082,9.375,2.082,14.006c0,5.842-3.016,12.895-8.267,19.35l-4.691,5.764l5.402,5.102								  c2.021,1.914,5.954,4.035,13.471,7.793c6.36,3.184,11.014,5.586,12.971,7.547c3.403,3.402,4.396,9.984,4.446,13.336H84.001								  l11.997,8h24c2.145,0,4.195-0.863,5.703-2.391c1.501-1.523,2.333-3.59,2.298-5.734C127.968,85.828,127.491,75.289,121.213,69.008z								  "></path>
+                  </svg>
+                </div><span class="header__menu-text">Совместное редактирование</span></a></div>
+            <div class="header__menu-decision"><a class="header__menu-link" href="">
+                <div class="header__menu-img-wrap">
+                  <svg class="menu-icon" id="upload-icon" version="1.1" width="33px" x="0px" y="0px" viewbox="0 0 486.3 486.3" xml:space="preserve">
+                    <path class="st0" d="M395.5,135.8c-5.2-30.9-20.5-59.1-43.9-80.5c-26-23.8-59.8-36.9-95-36.9c-27.2,0-53.7,7.8-76.4,22.5							  c-18.9,12.2-34.6,28.7-45.7,48.1c-4.8-0.9-9.8-1.4-14.8-1.4c-42.5,0-77.1,34.6-77.1,77.1c0,5.5,0.6,10.8,1.6,16							  C16.7,200.7,0,232.9,0,267.2c0,27.7,10.3,54.6,29.1,75.9c19.3,21.8,44.8,34.7,72,36.2c0.3,0,0.5,0,0.8,0h86							  c7.5,0,13.5-6,13.5-13.5s-6-13.5-13.5-13.5h-85.6C61.4,349.8,27,310.9,27,267.1c0-28.3,15.2-54.7,39.7-69							  c5.7-3.3,8.1-10.2,5.9-16.4c-2-5.4-3-11.1-3-17.2c0-27.6,22.5-50.1,50.1-50.1c5.9,0,11.7,1,17.1,3c6.6,2.4,13.9-0.6,16.9-6.9							  c18.7-39.7,59.1-65.3,103-65.3c59,0,107.7,44.2,113.3,102.8c0.6,6.1,5.2,11,11.2,12c44.5,7.6,78.1,48.7,78.1,95.6							  c0,49.7-39.1,92.9-87.3,96.6h-73.7c-7.5,0-13.5,6-13.5,13.5s6,13.5,13.5,13.5h74.2c0.3,0,0.6,0,1,0c30.5-2.2,59-16.2,80.2-39.6							  c21.1-23.2,32.6-53,32.6-84C486.2,199.5,447.9,149.6,395.5,135.8z"></path>
+                    <path class="st0" d="M324.2,280c5.3-5.3,5.3-13.8,0-19.1l-71.5-71.5c-2.5-2.5-6-4-9.5-4s-7,1.4-9.5,4l-71.5,71.5							  c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4l48.5-48.5v222.9c0,7.5,6,13.5,13.5,13.5s13.5-6,13.5-13.5V231.5							  l48.5,48.5C310.4,285.3,318.9,285.3,324.2,280z"></path>
+                  </svg>
+                </div><span class="header__menu-text">Решение</span></a></div>
+            <div class="header__menu-help"><a class="header__menu-link" href="#modal-help" data-toggle="modal" data-target="#modal-help">
+                <div class="header__menu-img-wrap">
+                  <svg class="menu-icon" id="help-icon" version="1.1" width="33px" x="0px" y="0px" viewbox="0 0 473.733 473.733" style="enable-background:new 0 0 473.733 473.733;" xml:space="preserve">
+                    <path d="M231.2,336.033c-9.35,0-17,7.65-17,17v11.333c0,9.35,7.65,17,17,17s17-7.65,17-17v-11.333								  C248.2,343.683,240.55,336.033,231.2,336.033z"></path>
+                    <path d="M236.867,473.733c130.617,0,236.867-106.25,236.867-236.867S367.483,0,236.867,0S0,106.25,0,236.867								  S106.25,473.733,236.867,473.733z M236.867,34c111.917,0,202.867,90.95,202.867,202.867s-90.95,202.867-202.867,202.867								  S34,348.783,34,236.867S124.95,34,236.867,34z"></path>
+                    <path d="M163.2,194.367C163.483,194.367,163.483,194.367,163.2,194.367c9.35,0,17-7.083,17-16.433c0,0,0.283-13.6,7.083-26.917								  c8.5-17,23.517-25.5,45.617-25.5c20.683,0,35.983,5.667,44.483,16.717c7.083,9.067,9.067,21.533,5.667,35.133								  c-4.25,16.717-18.7,31.167-32.583,45.333c-17,17.567-34.85,35.417-34.85,59.5c0,9.35,7.65,17,17,17s17-7.65,17-17								  c0-10.2,12.183-22.667,25.217-35.7c16.15-16.433,34.567-35.133,41.083-60.633c6.233-23.517,1.983-47.033-11.617-64.317								  c-10.483-13.6-31.45-30.033-71.117-30.033c-44.483,0-65.733,23.8-75.933,44.2c-10.2,20.4-10.767,39.95-10.767,42.217								  C146.483,187,153.85,194.367,163.2,194.367z"></path>
+                  </svg>
+                </div><span class="header__menu-text">Справка</span></a></div>
+            <div class="header__menu-cabinet"><a class="header__menu-link" href="#password-modal" data-toggle="modal" data-target="#password-modal">
+                <div class="header__menu-img-wrap">
+                  <svg class="menu-icon" id="user-icon" version="1.1" width="33px" x="0px" y="0px" viewbox="0 0 482.9 482.9" xml:space="preserve">
+                    <path d="M239.7,260.2c0.5,0,1,0,1.6,0c0.2,0,0.4,0,0.6,0c0.3,0,0.7,0,1,0c29.3-0.5,53-10.8,70.5-30.5								  c38.5-43.4,32.1-117.8,31.4-124.9c-2.5-53.3-27.7-78.8-48.5-90.7C280.8,5.2,262.7,0.4,242.5,0h-0.7c-0.1,0-0.3,0-0.4,0h-0.6								  c-11.1,0-32.9,1.8-53.8,13.7c-21,11.9-46.6,37.4-49.1,91.1c-0.7,7.1-7.1,81.5,31.4,124.9C186.7,249.4,210.4,259.7,239.7,260.2z								  M164.6,107.3c0-0.3,0.1-0.6,0.1-0.8c3.3-71.7,54.2-79.4,76-79.4h0.4c0.2,0,0.5,0,0.8,0c27,0.6,72.9,11.6,76,79.4								  c0,0.3,0,0.6,0.1,0.8c0.1,0.7,7.1,68.7-24.7,104.5c-12.6,14.2-29.4,21.2-51.5,21.4c-0.2,0-0.3,0-0.5,0l0,0c-0.2,0-0.3,0-0.5,0								  c-22-0.2-38.9-7.2-51.4-21.4C157.7,176.2,164.5,107.9,164.6,107.3z"></path>
+                    <path d="M446.8,383.6c0-0.1,0-0.2,0-0.3c0-0.8-0.1-1.6-0.1-2.5c-0.6-19.8-1.9-66.1-45.3-80.9c-0.3-0.1-0.7-0.2-1-0.3								  c-45.1-11.5-82.6-37.5-83-37.8c-6.1-4.3-14.5-2.8-18.8,3.3c-4.3,6.1-2.8,14.5,3.3,18.8c1.7,1.2,41.5,28.9,91.3,41.7								  c23.3,8.3,25.9,33.2,26.6,56c0,0.9,0,1.7,0.1,2.5c0.1,9-0.5,22.9-2.1,30.9c-16.2,9.2-79.7,41-176.3,41								  c-96.2,0-160.1-31.9-176.4-41.1c-1.6-8-2.3-21.9-2.1-30.9c0-0.8,0.1-1.6,0.1-2.5c0.7-22.8,3.3-47.7,26.6-56								  c49.8-12.8,89.6-40.6,91.3-41.7c6.1-4.3,7.6-12.7,3.3-18.8c-4.3-6.1-12.7-7.6-18.8-3.3c-0.4,0.3-37.7,26.3-83,37.8								  c-0.4,0.1-0.7,0.2-1,0.3c-43.4,14.9-44.7,61.2-45.3,80.9c0,0.9,0,1.7-0.1,2.5c0,0.1,0,0.2,0,0.3c-0.1,5.2-0.2,31.9,5.1,45.3								  c1,2.6,2.8,4.8,5.2,6.3c3,2,74.9,47.8,195.2,47.8s192.2-45.9,195.2-47.8c2.3-1.5,4.2-3.7,5.2-6.3								  C447,415.5,446.9,388.8,446.8,383.6z"></path>
+                  </svg>
+                </div><span class="header__menu-text">Личный кабинет</span></a></div>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="nav-panel">
-      <div class="nav-panel__list nav-panel__list_type_options"><a class="nav-panel__item nav-panel__item_location_leftside" href="#">Показатели</a><a class="nav-panel__item nav-panel__item_location_leftside" href="#">Ключевые показатели</a><a class="nav-panel__item nav-panel__item_location_leftside" href="#">Отчетность</a>
-      </div>
-      <div class="nav-panel__list nav-panel__list_type_content"><a class="nav-panel__item nav-panel__item_location_rightside" href="#">Чат<span class="nav-panel__count">3</span></a><a class="nav-panel__item nav-panel__item_location_rightside" href="#">Новости<span class="nav-panel__count">18</span></a>
-      </div>
-      <button class="nav-panel__btn" type="button"><img class="nav-panel__icon" src="img/arrow-left.png" alt="icon"/></button>
-    </div>
-    <div class="model-content content">
-      <div class="content__inner clearfix">
-        <div class="widgets-panel">
-          <button class="btn add-widgets" type="button">
-            <div class="add-widgets__plus"></div>
-            <div class="add-widgets__txt">Виджеты</div>
-          </button>
-          <button class="btn remove-widgets" type="button"><span>Cбросить виджеты</span></button>
+      </header>
+      <div class="left-side-btn"> <img class="left-side-btn__img" src="img/arrow-right.png"/></div>
+      <div class="left-side left-side_page_model">
+        <div class="left-side-title">
+          <div class="left-side-title__block">Модели и R&amp;D<img class="left-side-title__icon" src="img/chevron-down.png"/></div>
         </div>
-        <div class="content__cols">
-          <div class="content__col">
-            <div class="widget widget-marketing widget-model">
-              <div class="widget__title">
-                <div class="widget__title-cnt widget-model__title"><span class="widget__title-txt">Продажа моделей</span>
-                  <sapn class="widget__title-h"><img class="widget__title-h-img" src="img/widget-help-icon.png" alt="icon"/><span class="widget__help">
-                      <p>
-                        Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
-                        я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
-                        словно созданном для таких, как я.
-                      </p></span></sapn>
-                </div>
-                <div class="model-nav">
-                  <p class="model-nav__name">Модель № 1</p>
-                  <div class="model-nav__btns">
-                    <button class="model-nav__btn model-nav__prev"><img class="model-nav__btn-img" src="img/left-arrow.png" alt="icon"/></button>
-                    <button class="model-nav__btn model-nav__next"><img class="model-nav__btn-img" src="img/right-arrow.png" alt="icon"/></button>
-                  </div>
-                </div><a class="widget__title-arrow" href=""><img class="widget__title-arrow-ico" src="img/chevron-down.png" alt="icon"/></a>
+        <div class="left-side__list"><a class="left-side__list-link" href="">
+            <div class="left-side__list-item">Продукт</div></a><a class="left-side__list-link" href="marketing.html">
+            <div class="left-side__list-item">Маркетинг</div></a><a class="left-side__list-link" href="personnel.html">
+            <div class="left-side__list-item">Персонал</div></a><a class="left-side__list-link" href="finance.html">
+            <div class="left-side__list-item">Финансы</div></a><a class="left-side__list-link" href="model.htm">
+            <div class="left-side__list-item">Производство</div></a><a class="left-side__list-link" href="social.html">
+            <div class="left-side__list-item">Социальная ответственность</div></a>
+        </div>
+        <div class="left-side__body left-side-body_size_l">
+          <div class="model-block">
+            <div class="model__item">
+              <div class="model__title">
+                <div class="model__components-title">Компоненты</div><a class="model__edit-btn"><span class="model__name">Модель №1</span><img class="model__edit-icon" src="img/write-icon.png"/></a>
               </div>
-              <div class="widget__body">
-                <div class="models owl-carousel">
-                  <div class="model">
-                    <div class="model__nav"><a class="model__nav-link active" href="img">Изображение</a><a class="model__nav-link" href="characteristic">Характеристики</a></div><img class="model__img" src="img/mobile-icon.png" alt="icon" style="display:block;"/>
-                    <div class="model__data">
-                      <div class="data-table data-table_height_a model-table">
-                        <table class="data-table__cnt">
-                          <thead>
-                            <tr class="data-table__hr data-table__hr_b0">
-                              <th class="data-table__h data-table__h-txt_black data-table__h_big"><span>Компоненты</span></th>
-                              <th class="data-table__h text-center data-table__h_big"><span>Уровень</span></th>
-                              <th class="data-table__h text-center data-table__h_big"><span>Энергоем.</span></th>
-                              <th class="data-table__h data-table__h_big"><span>Себестоим.</span></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Процессор</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Диагональ</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Матрица</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Камера</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Аккумулятор</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Материал</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Итого:</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <p class="data">Время работы: 40 часов</p>
-                    </div>
+              <div class="left-side__inner left-side__inner_type_select">
+                <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_page_model"> 
+                  <div class="left-side__name">Процессор</div>
+                  <div class="left-side__description">MHZ</div>
+                </div>
+                <div class="spinner-input__field-container spinner-input__field-container_size_xl">
+                  <div class="model__nice-select-block">
+                    <select class="form__select select-style form__select_min form__select_type_model">
+                      <option selected="selected">250</option>
+                      <option>350</option>
+                      <option>400</option>
+                    </select>
                   </div>
-                  <div class="model">
-                    <div class="model__nav"><a class="model__nav-link active" href="img">Изображение</a><a class="model__nav-link" href="characteristic">Характеристики</a></div><img class="model__img" src="img/mobile-icon.png" alt="icon" style="display:block;"/>
-                    <div class="model__data">
-                      <div class="data-table data-table_height_a model-table">
-                        <table class="data-table__cnt">
-                          <thead>
-                            <tr class="data-table__hr data-table__hr_b0">
-                              <th class="data-table__h data-table__h-txt_black data-table__h_big"><span>Компоненты</span></th>
-                              <th class="data-table__h text-center data-table__h_big"><span>Уровень</span></th>
-                              <th class="data-table__h text-center data-table__h_big"><span>Энергоем.</span></th>
-                              <th class="data-table__h data-table__h_big"><span>Себестоим.</span></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Процессор</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Диагональ</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Матрица</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Камера</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Аккумулятор</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Материал</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Итого:</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <p class="data">Время работы: 40 часов</p>
-                    </div>
+                  <input class="model__input model__input_size_l" value="40" readonly="readonly"/>
+                  <div class="spinner-input__currency">$</div>
+                </div>
+              </div>
+              <div class="left-side__inner left-side__inner_type_select">
+                <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_page_model">
+                  <div class="left-side__name">Диагональ</div>
+                  <div class="left-side__description">дюймов</div>
+                </div>
+                <div class="spinner-input__field-container spinner-input__field-container_size_xl">
+                  <div class="model__nice-select-block">
+                    <select class="form__select select-style form__select_min form__select_type_model">
+                      <option selected="selected">3.5</option>
+                      <option>4.5</option>
+                      <option>5.5</option>
+                    </select>
                   </div>
-                  <div class="model">
-                    <div class="model__nav"><a class="model__nav-link active" href="img">Изображение</a><a class="model__nav-link" href="characteristic">Характеристики</a></div><img class="model__img" src="img/mobile-icon.png" alt="icon" style="display:block;"/>
-                    <div class="model__data">
-                      <div class="data-table data-table_height_a model-table">
-                        <table class="data-table__cnt">
-                          <thead>
-                            <tr class="data-table__hr data-table__hr_b0">
-                              <th class="data-table__h data-table__h-txt_black data-table__h_big"><span>Компоненты</span></th>
-                              <th class="data-table__h text-center data-table__h_big"><span>Уровень</span></th>
-                              <th class="data-table__h text-center data-table__h_big"><span>Энергоем.</span></th>
-                              <th class="data-table__h data-table__h_big"><span>Себестоим.</span></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Процессор</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Диагональ</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Матрица</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Камера</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Аккумулятор</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Материал</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Итого:</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <p class="data">Время работы: 40 часов</p>
-                    </div>
+                  <input class="model__input model__input_size_l" value="40" readonly="readonly"/>
+                  <div class="spinner-input__currency">$</div>
+                </div>
+              </div>
+              <div class="left-side__inner left-side__inner_type_select">
+                <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_page_model"> 
+                  <div class="left-side__name">Матрица</div>
+                  <div class="left-side__description">тип</div>
+                </div>
+                <div class="spinner-input__field-container spinner-input__field-container_size_xl">
+                  <div class="model__nice-select-block">
+                    <select class="form__select select-style form__select_min form__select_type_model">
+                      <option selected="selected">IPS</option>
+                      <option>TNT</option>
+                      <option>TFT</option>
+                    </select>
                   </div>
-                  <div class="model">
-                    <div class="model__nav"><a class="model__nav-link active" href="img">Изображение</a><a class="model__nav-link" href="characteristic">Характеристики</a></div><img class="model__img" src="img/mobile-icon.png" alt="icon" style="display:block;"/>
-                    <div class="model__data">
-                      <div class="data-table data-table_height_a model-table">
-                        <table class="data-table__cnt">
-                          <thead>
-                            <tr class="data-table__hr data-table__hr_b0">
-                              <th class="data-table__h data-table__h-txt_black data-table__h_big"><span>Компоненты</span></th>
-                              <th class="data-table__h text-center data-table__h_big"><span>Уровень</span></th>
-                              <th class="data-table__h text-center data-table__h_big"><span>Энергоем.</span></th>
-                              <th class="data-table__h data-table__h_big"><span>Себестоим.</span></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Процессор</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Диагональ</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Матрица</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Камера</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Аккумулятор</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Материал</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Итого:</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <p class="data">Время работы: 40 часов</p>
-                    </div>
+                  <input class="model__input model__input_size_l" value="25" readonly="readonly"/>
+                  <div class="spinner-input__currency">$</div>
+                </div>
+              </div>
+              <div class="left-side__inner left-side__inner_type_select">
+                <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_page_model"> 
+                  <div class="left-side__name">Камера</div>
+                  <div class="left-side__description">мегапискселей</div>
+                </div>
+                <div class="spinner-input__field-container spinner-input__field-container_size_xl">
+                  <div class="model__nice-select-block">
+                    <select class="form__select select-style form__select_min form__select_type_model">
+                      <option selected="selected">8</option>
+                      <option>12</option>
+                      <option>16</option>
+                    </select>
                   </div>
-                  <div class="model">
-                    <div class="model__nav"><a class="model__nav-link active" href="img">Изображение</a><a class="model__nav-link" href="characteristic">Характеристики</a></div><img class="model__img" src="img/mobile-icon.png" alt="icon" style="display:block;"/>
-                    <div class="model__data">
-                      <div class="data-table data-table_height_a model-table">
-                        <table class="data-table__cnt">
-                          <thead>
-                            <tr class="data-table__hr data-table__hr_b0">
-                              <th class="data-table__h data-table__h-txt_black data-table__h_big"><span>Компоненты</span></th>
-                              <th class="data-table__h text-center data-table__h_big"><span>Уровень</span></th>
-                              <th class="data-table__h text-center data-table__h_big"><span>Энергоем.</span></th>
-                              <th class="data-table__h data-table__h_big"><span>Себестоим.</span></th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Процессор</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Диагональ</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Матрица</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Камера</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Аккумулятор</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Материал</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                            </tr>
-                            <tr class="data-table__r">
-                              <td class="data-table__d"><span>Итого:</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                              <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                            </tr>
-                          </tbody>
-                        </table>
+                  <input class="model__input model__input_size_l" value="15" readonly="readonly"/>
+                  <div class="spinner-input__currency">$</div>
+                </div>
+              </div>
+              <div class="left-side__inner left-side__inner_type_select">
+                <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_page_model"> 
+                  <div class="left-side__name">Аккумулятор</div>
+                </div>
+                <div class="spinner-input__field-container spinner-input__field-container_size_xl">
+                  <div class="model__nice-select-block">
+                    <select class="form__select select-style form__select_min form__select_type_model">
+                      <option selected="selected">3000</option>
+                      <option>3500</option>
+                      <option>4000</option>
+                    </select>
+                  </div>
+                  <input class="model__input model__input_size_l" value="15" readonly="readonly"/>
+                  <div class="spinner-input__currency">$</div>
+                </div>
+              </div>
+              <div class="left-side__inner left-side__inner_type_select">
+                <div class="left-side__title-block left-side__title-block_size_xs left-side__title-block_page_model"> 
+                  <div class="left-side__name">Материал корпуса</div>
+                </div>
+                <div class="spinner-input__field-container spinner-input__field-container_size_xxl">
+                  <div class="model__nice-select-block model__nice-select-block_size_xl">
+                    <select class="form__select select-style form__select_min form__select_type_model">
+                      <option selected="selected">Пластик</option>
+                      <option>Метал</option>
+                      <option>Стекло</option>
+                    </select>
+                  </div>
+                  <input class="model__input model__input_size_l" value="15" readonly="readonly"/>
+                  <div class="spinner-input__currency">$</div>
+                </div>
+              </div>
+            </div>
+            <div class="model__item">
+              <div class="model__title">
+                <div class="model__components-title model__component-title_width_full">Resersch & Development
+                  <div class="left-side__inner">
+                    <div class="left-side__title-block left-side__title-block_size_l left-side__title-block_position_middle">
+                      <div class="left-side__name">Инвестиции R&D</div>
+                    </div>
+                    <div class="spinner-input spinner-input_position_middle spinner-input_size_xl">
+                      <div class="spinner-input__field-container spinner-input__field-container_size_m">
+                        <input class="spinner-input__field" type="text" value="5000" readonly="readonly"/><img class="spinner-input__btn spinner-input__btn_arrow_up" src="img/spinner-up.png" alt="icon" onclick="addCount(this,50000,1000)"/><img class="spinner-input__btn spinner-input__btn_arrow_bottom" src="img/spinner-down.png" alt="icon" onclick="minusCount(this,5000,1000)"/>
                       </div>
-                      <p class="data">Время работы: 40 часов</p>
+                      <div class="spinner-input__currency spinner-input__currency_size_m">тыс. $</div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="content__col">
-            <div class="widget">
-              <div class="widget__title">
-                <div class="widget__title-cnt"><span class="widget__title-txt">Показатели компании</span>
-                  <sapn class="widget__title-h"><img class="widget__title-h-img" src="img/widget-help-icon.png" alt="icon"/><span class="widget__help">
-                      <p>
-                        Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
-                        я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
-                        словно созданном для таких, как я.
-                      </p></span></sapn>
-                </div><a class="widget__title-arrow" href=""><img class="widget__title-arrow-ico" src="img/chevron-down.png" alt="icon"/></a>
-              </div>
-              <div class="widget__body">
-                <div class="data-table marketing-table">
-                  <table class="data-table__cnt">
-                    <thead>
-                      <tr class="data-table__hr">
-                        <th class="data-table__h data-table__h-txt_black data-table__h_w_42"><span>Целевые показатели</span></th>
-                        <th class="data-table__h text-center"><span>Квартал 3</span></th>
-                        <th class="data-table__h text-center"><span>Квартал 4</span></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Выручка за акцию</span></td>
-                        <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                        <td class="data-table__d text-center"><span>10$</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Рентабильность капитала</span></td>
-                        <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                        <td class="data-table__d text-center"><span>19$</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Кредитный рейтинг</span></td>
-                        <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                        <td class="data-table__d text-center"><span>BB+</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d data-table__d_last"><span>Имиджевый рейтинг</span></td>
-                        <td class="data-table__d text-center data-table__d_last"><span class="data-table__minus">39</span></td>
-                        <td class="data-table__d text-center data-table__d_last"><span>42</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <div class="data-table marketing-table data-table_without-scroll-style">
-                  <table class="data-table__cnt">
-                    <thead>
-                      <tr class="data-table__hr">
-                        <th class="data-table__h data-table__h-txt_black data-table__h_w_42"><span>Результаты</span></th>
-                        <th class="data-table__h text-center"><span>Квартал 3</span></th>
-                        <th class="data-table__h text-center"><span>Квартал 4</span></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Выручка за акцию</span></td>
-                        <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
-                        <td class="data-table__d text-center"><span>10$</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Рентабильность капитала</span></td>
-                        <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
-                        <td class="data-table__d text-center"><span>19$</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Кредитный рейтинг</span></td>
-                        <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
-                        <td class="data-table__d text-center"><span>BB+</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d data-table__d_last"><span>Имиджевый рейтинг</span></td>
-                        <td class="data-table__d text-center data-table__d_last"><span class="data-table__minus">39</span></td>
-                        <td class="data-table__d text-center data-table__d_last"><span>42</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+            <div class="model__item">
+              <div class="model__price-inner">
+                <div class="model__price-total">Мин: 5 000 000$</div>
+                <div class="model__price-total">Мин: 50 000 000$</div>
+                <div class="model__price-description">(общие для всех моделей)  </div>
               </div>
             </div>
+          </div>
+          <div class="model-block">
+            <div class="model__item model__item_type_add-panel"><a class="model__add-btn" href="#"><img class="model__add-icon" src="img/add-model-icon.png" alt="icon"/><span class="model__add-btn-text">Добавить модель (2/3)</span></a><a class="model__edit-btn model__edit-btn_position_center"><span class="model__name">Модель №1</span><img class="model__edit-icon" src="img/write-icon.png"/></a></div>
           </div>
         </div>
-        <div class="content__cols">
-          <div class="content__col">
-            <div class="widget">
-              <div class="widget__title">
-                <div class="widget__title-cnt"><span class="widget__title-txt">Свободный маркетинг по регионам</span>
-                  <sapn class="widget__title-h"><img class="widget__title-h-img" src="img/widget-help-icon.png" alt="icon"/><span class="widget__help">
-                      <p>
-                        Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
-                        я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
-                        словно созданном для таких, как я.
-                      </p></span></sapn>
-                </div><a class="widget__title-arrow" href=""><img class="widget__title-arrow-ico" src="img/chevron-down.png" alt="icon"/></a>
-              </div>
-              <div class="widget__body">
-                <div class="data-table data-table_height_a data-table_style data-table_height_w">
-                  <table class="data-table__cnt">
-                    <thead>
-                      <tr class="data-table__hr">
-                        <th class="data-table__h data-table__h-txt_black data-table__h_w_28 data-table__big"><span>Целевые показатели</span></th>
-                        <th class="data-table__h"><span>Квартал 3</span></th>
-                        <th class="data-table__h"><span>Квартал 4</span></th>
-                        <th class="data-table__h"><span>Квартал 4</span></th>
-                        <th class="data-table__h"><span>Квартал 4</span></th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Выручка за акцию</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__plus">14,1$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span>10$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__plus">14,1$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span>10$</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Рентабильность капитала</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__plus">23,2$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__up">19$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__plus">23,2$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__up">19$</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Кредитный рейтинг</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__minus">B-</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__down">BB+</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__minus">B-</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__down">BB+</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Имиджевый рейтинг</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__minus">39</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__down">42</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__minus">39</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__down">42</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Выручка за акцию</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__plus">14,1$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span>10$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__plus">14,1$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span>10$</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Рентабильность капитала</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__plus">23,2$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span>19$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__plus">23,2$</span></td>
-                        <td class="data-table__d data-table__d_pl"><span>19$</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Кредитный рейтинг</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__minus">B-</span></td>
-                        <td class="data-table__d data-table__d_pl"><span>BB+</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__minus">B-</span></td>
-                        <td class="data-table__d data-table__d_pl"><span>BB+</span></td>
-                      </tr>
-                      <tr class="data-table__r">
-                        <td class="data-table__d"><span>Имиджевый рейтинг</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__minus">39</span></td>
-                        <td class="data-table__d data-table__d_pl"><span>42</span></td>
-                        <td class="data-table__d data-table__d_pl"><span class="data-table__minus">39</span></td>
-                        <td class="data-table__d data-table__d_pl"><span>42</span></td>
-                      </tr>
-                    </tbody>
-                  </table>
+      </div>
+      <div class="nav-panel">
+        <div class="nav-panel__list nav-panel__list_type_options"><a class="nav-panel__item nav-panel__item_location_leftside" href="#">Показатели</a><a class="nav-panel__item nav-panel__item_location_leftside" href="#">Ключевые показатели</a><a class="nav-panel__item nav-panel__item_location_leftside" href="#">Отчетность</a>
+        </div>
+        <div class="nav-panel__list nav-panel__list_type_content"><a class="nav-panel__item nav-panel__item_location_rightside" href="#" id="chat-switch">Чат<span class="nav-panel__count">3</span></a><a class="nav-panel__item nav-panel__item_location_rightside" href="#" id="news-switch">Новости<span class="nav-panel__count">18</span></a></div>
+        <button class="nav-panel__btn" type="button"><img class="nav-panel__icon" src="img/arrow-left.png" alt="icon"/></button>
+      </div>
+      <div class="model-content content">
+        <div class="content__inner clearfix">
+          <div class="widgets-panel">
+            <button class="btn add-widgets" type="button">
+              <div class="add-widgets__plus"></div>
+              <div class="add-widgets__txt">Виджеты</div>
+            </button>
+            <button class="btn remove-widgets" type="button">
+              <div class="remove-widgets__img"><span></span><span></span><span></span><span></span></div><span>Cбросить виджеты</span>
+            </button>
+          </div>
+          <div class="content__cols">
+            <div class="content__col">
+              <div class="widget widget-model">
+                <div class="widget__title">
+                  <div class="widget__title-cnt widget-model__title"><span class="widget__title-txt">Продажа моделей</span>
+                    <sapn class="widget__title-h">
+                      <svg class="widget__title-h-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 473.733 473.733" style="enable-background:new 0 0 473.733 473.733;" xml:space="preserve">
+                        <path d="M231.2,336.033c-9.35,0-17,7.65-17,17v11.333c0,9.35,7.65,17,17,17s17-7.65,17-17v-11.333														  C248.2,343.683,240.55,336.033,231.2,336.033z"></path>
+                        <path d="M236.867,473.733c130.617,0,236.867-106.25,236.867-236.867S367.483,0,236.867,0S0,106.25,0,236.867														  S106.25,473.733,236.867,473.733z M236.867,34c111.917,0,202.867,90.95,202.867,202.867s-90.95,202.867-202.867,202.867														  S34,348.783,34,236.867S124.95,34,236.867,34z"></path>
+                        <path d="M163.2,194.367C163.483,194.367,163.483,194.367,163.2,194.367c9.35,0,17-7.083,17-16.433c0,0,0.283-13.6,7.083-26.917														  c8.5-17,23.517-25.5,45.617-25.5c20.683,0,35.983,5.667,44.483,16.717c7.083,9.067,9.067,21.533,5.667,35.133														  c-4.25,16.717-18.7,31.167-32.583,45.333c-17,17.567-34.85,35.417-34.85,59.5c0,9.35,7.65,17,17,17s17-7.65,17-17														  c0-10.2,12.183-22.667,25.217-35.7c16.15-16.433,34.567-35.133,41.083-60.633c6.233-23.517,1.983-47.033-11.617-64.317														  c-10.483-13.6-31.45-30.033-71.117-30.033c-44.483,0-65.733,23.8-75.933,44.2c-10.2,20.4-10.767,39.95-10.767,42.217														  C146.483,187,153.85,194.367,163.2,194.367z"></path>
+                      </svg><span class="widget__help">
+                        <p>
+                          Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
+                          я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+                          словно созданном для таких, как я.
+                        </p></span>
+                    </sapn>
+                  </div>
+                  <div class="model-nav">
+                    <p class="model-nav__name">Модель № 1</p>
+                    <div class="model-nav__btns">
+                      <button class="model-nav__btn model-nav__prev"><img class="model-nav__btn-img" src="img/left-arrow.png" alt="icon"/></button>
+                      <button class="model-nav__btn model-nav__next"><img class="model-nav__btn-img" src="img/right-arrow.png" alt="icon"/></button>
+                    </div>
+                  </div><a class="widget__title-arrow" href=""><img class="widget__title-arrow-ico" src="img/chevron-down.png" alt="icon"/></a>
+                </div>
+                <div class="widget__body">
+                  <div class="models owl-carousel">
+                    <div class="model">
+                      <div class="model__nav"><a class="model__nav-link active" href="img">Изображение</a><a class="model__nav-link" href="characteristic">Характеристики</a></div><img class="model__img" src="img/mobile-icon.png" alt="icon" style="display:block;"/>
+                      <div class="model__data">
+                        <div class="data-table data-table_height_a model-table">
+                          <table class="data-table__cnt">
+                            <thead>
+                              <tr class="data-table__hr data-table__hr_b0">
+                                <th class="data-table__h data-table__h-txt_black data-table__h_big"><span>Компоненты</span></th>
+                                <th class="data-table__h text-center data-table__h_big"><span>Уровень</span></th>
+                                <th class="data-table__h text-center data-table__h_big"><span>Энергоем.</span></th>
+                                <th class="data-table__h data-table__h_big"><span>Себестоим.</span></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Процессор</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Диагональ</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Матрица</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Камера</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Аккумулятор</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Материал</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Итого:</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p class="data">Время работы: 40 часов</p>
+                      </div>
+                    </div>
+                    <div class="model">
+                      <div class="model__nav"><a class="model__nav-link active" href="img">Изображение</a><a class="model__nav-link" href="characteristic">Характеристики</a></div><img class="model__img" src="img/mobile-icon.png" alt="icon" style="display:block;"/>
+                      <div class="model__data">
+                        <div class="data-table data-table_height_a model-table">
+                          <table class="data-table__cnt">
+                            <thead>
+                              <tr class="data-table__hr data-table__hr_b0">
+                                <th class="data-table__h data-table__h-txt_black data-table__h_big"><span>Компоненты</span></th>
+                                <th class="data-table__h text-center data-table__h_big"><span>Уровень</span></th>
+                                <th class="data-table__h text-center data-table__h_big"><span>Энергоем.</span></th>
+                                <th class="data-table__h data-table__h_big"><span>Себестоим.</span></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Процессор</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Диагональ</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Матрица</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Камера</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Аккумулятор</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Материал</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Итого:</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p class="data">Время работы: 40 часов</p>
+                      </div>
+                    </div>
+                    <div class="model">
+                      <div class="model__nav"><a class="model__nav-link active" href="img">Изображение</a><a class="model__nav-link" href="characteristic">Характеристики</a></div><img class="model__img" src="img/mobile-icon.png" alt="icon" style="display:block;"/>
+                      <div class="model__data">
+                        <div class="data-table data-table_height_a model-table">
+                          <table class="data-table__cnt">
+                            <thead>
+                              <tr class="data-table__hr data-table__hr_b0">
+                                <th class="data-table__h data-table__h-txt_black data-table__h_big"><span>Компоненты</span></th>
+                                <th class="data-table__h text-center data-table__h_big"><span>Уровень</span></th>
+                                <th class="data-table__h text-center data-table__h_big"><span>Энергоем.</span></th>
+                                <th class="data-table__h data-table__h_big"><span>Себестоим.</span></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Процессор</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Диагональ</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Матрица</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Камера</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Аккумулятор</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Материал</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Итого:</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p class="data">Время работы: 40 часов</p>
+                      </div>
+                    </div>
+                    <div class="model">
+                      <div class="model__nav"><a class="model__nav-link active" href="img">Изображение</a><a class="model__nav-link" href="characteristic">Характеристики</a></div><img class="model__img" src="img/mobile-icon.png" alt="icon" style="display:block;"/>
+                      <div class="model__data">
+                        <div class="data-table data-table_height_a model-table">
+                          <table class="data-table__cnt">
+                            <thead>
+                              <tr class="data-table__hr data-table__hr_b0">
+                                <th class="data-table__h data-table__h-txt_black data-table__h_big"><span>Компоненты</span></th>
+                                <th class="data-table__h text-center data-table__h_big"><span>Уровень</span></th>
+                                <th class="data-table__h text-center data-table__h_big"><span>Энергоем.</span></th>
+                                <th class="data-table__h data-table__h_big"><span>Себестоим.</span></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Процессор</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Диагональ</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Матрица</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Камера</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Аккумулятор</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Материал</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Итого:</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p class="data">Время работы: 40 часов</p>
+                      </div>
+                    </div>
+                    <div class="model">
+                      <div class="model__nav"><a class="model__nav-link active" href="img">Изображение</a><a class="model__nav-link" href="characteristic">Характеристики</a></div><img class="model__img" src="img/mobile-icon.png" alt="icon" style="display:block;"/>
+                      <div class="model__data">
+                        <div class="data-table data-table_height_a model-table">
+                          <table class="data-table__cnt">
+                            <thead>
+                              <tr class="data-table__hr data-table__hr_b0">
+                                <th class="data-table__h data-table__h-txt_black data-table__h_big"><span>Компоненты</span></th>
+                                <th class="data-table__h text-center data-table__h_big"><span>Уровень</span></th>
+                                <th class="data-table__h text-center data-table__h_big"><span>Энергоем.</span></th>
+                                <th class="data-table__h data-table__h_big"><span>Себестоим.</span></th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Процессор</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Диагональ</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Матрица</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Камера</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Аккумулятор</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Материал</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                              </tr>
+                              <tr class="data-table__r">
+                                <td class="data-table__d"><span>Итого:</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                                <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <p class="data">Время работы: 40 часов</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="content__col">
-            <div class="widget">
-              <div class="widget__title">
-                <div class="widget__title-cnt"><span class="widget__title-txt">Показатели R&D</span>
-                  <sapn class="widget__title-h"><img class="widget__title-h-img" src="img/widget-help-icon.png" alt="icon"/><span class="widget__help">
-                      <p>
-                        Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
-                        я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
-                        словно созданном для таких, как я.
-                      </p></span></sapn>
-                </div><a class="widget__title-arrow" href=""><img class="widget__title-arrow-ico" src="img/chevron-down.png" alt="icon"/></a>
+              <div class="widget widget_h_a">
+                <div class="widget__title">
+                  <div class="widget__title-cnt"><span class="widget__title-txt">Свободный маркетинг по регионам</span>
+                    <sapn class="widget__title-h">
+                      <svg class="widget__title-h-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 473.733 473.733" style="enable-background:new 0 0 473.733 473.733;" xml:space="preserve">
+                        <path d="M231.2,336.033c-9.35,0-17,7.65-17,17v11.333c0,9.35,7.65,17,17,17s17-7.65,17-17v-11.333                                    									  C248.2,343.683,240.55,336.033,231.2,336.033z"></path>
+                        <path d="M236.867,473.733c130.617,0,236.867-106.25,236.867-236.867S367.483,0,236.867,0S0,106.25,0,236.867                                    									  S106.25,473.733,236.867,473.733z M236.867,34c111.917,0,202.867,90.95,202.867,202.867s-90.95,202.867-202.867,202.867                                    									  S34,348.783,34,236.867S124.95,34,236.867,34z"></path>
+                        <path d="M163.2,194.367C163.483,194.367,163.483,194.367,163.2,194.367c9.35,0,17-7.083,17-16.433c0,0,0.283-13.6,7.083-26.917                                    									  c8.5-17,23.517-25.5,45.617-25.5c20.683,0,35.983,5.667,44.483,16.717c7.083,9.067,9.067,21.533,5.667,35.133                                    									  c-4.25,16.717-18.7,31.167-32.583,45.333c-17,17.567-34.85,35.417-34.85,59.5c0,9.35,7.65,17,17,17s17-7.65,17-17                                    									  c0-10.2,12.183-22.667,25.217-35.7c16.15-16.433,34.567-35.133,41.083-60.633c6.233-23.517,1.983-47.033-11.617-64.317                                    									  c-10.483-13.6-31.45-30.033-71.117-30.033c-44.483,0-65.733,23.8-75.933,44.2c-10.2,20.4-10.767,39.95-10.767,42.217                                    									  C146.483,187,153.85,194.367,163.2,194.367z"></path>
+                      </svg><span class="widget__help">
+                        <p>
+                          Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
+                          я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+                          словно созданном для таких, как я.
+                        </p></span>
+                    </sapn>
+                  </div><a class="widget__title-arrow" href=""><img class="widget__title-arrow-ico" src="img/chevron-down.png" alt="icon"/></a>
+                </div>
+                <div class="widget__body">
+                  <div class="data-table data-table_height_a data-table_style">
+                    <table class="data-table__cnt">
+                      <thead>
+                        <tr class="data-table__hr">
+                          <th class="data-table__h data-table__h-txt_black data-table__h_w_42"><span>Показатель</span></th>
+                          <th class="data-table__h text-center"><span>Модель №1</span></th>
+                          <th class="data-table__h text-center"><span>Модель №1</span></th>
+                          <th class="data-table__h text-center"><span>Модель №1</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Выручка за акцию</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                          <td class="data-table__d text-center"><span>10$</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Рентабильность капитала</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                          <td class="data-table__d text-center"><span>19$</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Кредитный рейтинг</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                          <td class="data-table__d text-center"><span>BB+</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Имиджевый рейтинг</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                          <td class="data-table__d text-center"><span>42</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Выручка за акцию</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                          <td class="data-table__d text-center"><span>10$</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Рентабильность капитала</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                          <td class="data-table__d text-center"><span>19$</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Кредитный рейтинг</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                          <td class="data-table__d text-center"><span>BB+</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Имиджевый рейтинг</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                          <td class="data-table__d text-center"><span>42</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Кредитный рейтинг</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                          <td class="data-table__d text-center"><span>BB+</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d data-table__d_last"><span>Имиджевый рейтинг</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">39</span></td>
+                          <td class="data-table__d text-center"><span>42</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
               </div>
-              <div class="widget__body">
-                <div class="widget__block_type_rd">
-                  <div class="widget__left-side"><img class="widget__option-img" src="img/img-rd.png" alt="image"/></div>
-                  <div class="widget-right-side">
-                    <div class="widget__block-options">
-                      <div class="widget__block-option widget__block-option_size_l"> 
-                        <div class="widget__block-option-text widget__block-option-text_size_m">HTП компании</div>
+              <div class="widget">
+                <div class="widget__title widget__title-min">
+                  <div class="widget__title-cnt"><span class="widget__title-txt">Позиционирование моделей</span>
+                    <sapn class="widget__title-h">
+                      <svg class="widget__title-h-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 473.733 473.733" style="enable-background:new 0 0 473.733 473.733;" xml:space="preserve">
+                        <path d="M231.2,336.033c-9.35,0-17,7.65-17,17v11.333c0,9.35,7.65,17,17,17s17-7.65,17-17v-11.333                                    									  C248.2,343.683,240.55,336.033,231.2,336.033z"></path>
+                        <path d="M236.867,473.733c130.617,0,236.867-106.25,236.867-236.867S367.483,0,236.867,0S0,106.25,0,236.867                                    									  S106.25,473.733,236.867,473.733z M236.867,34c111.917,0,202.867,90.95,202.867,202.867s-90.95,202.867-202.867,202.867                                    									  S34,348.783,34,236.867S124.95,34,236.867,34z"></path>
+                        <path d="M163.2,194.367C163.483,194.367,163.483,194.367,163.2,194.367c9.35,0,17-7.083,17-16.433c0,0,0.283-13.6,7.083-26.917                                    									  c8.5-17,23.517-25.5,45.617-25.5c20.683,0,35.983,5.667,44.483,16.717c7.083,9.067,9.067,21.533,5.667,35.133                                    									  c-4.25,16.717-18.7,31.167-32.583,45.333c-17,17.567-34.85,35.417-34.85,59.5c0,9.35,7.65,17,17,17s17-7.65,17-17                                    									  c0-10.2,12.183-22.667,25.217-35.7c16.15-16.433,34.567-35.133,41.083-60.633c6.233-23.517,1.983-47.033-11.617-64.317                                    									  c-10.483-13.6-31.45-30.033-71.117-30.033c-44.483,0-65.733,23.8-75.933,44.2c-10.2,20.4-10.767,39.95-10.767,42.217                                    									  C146.483,187,153.85,194.367,163.2,194.367z"></path>
+                      </svg><span class="widget__help">
+                        <p>
+                          Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
+                          я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+                          словно созданном для таких, как я.
+                        </p></span>
+                    </sapn>
+                  </div><a class="widget__title-arrow" href=""><img class="widget__title-arrow-ico" src="img/chevron-down.png" alt="icon"/></a>
+                </div>
+                <div class="widget__body widget__body_pd"><img class="chart" src="img/model-position.png" alt="icon"/></div>
+              </div>
+            </div>
+            <div class="content__col">
+              <div class="widget">
+                <div class="widget__title">
+                  <div class="widget__title-cnt"><span class="widget__title-txt">Показатели компании</span>
+                    <sapn class="widget__title-h">
+                      <svg class="widget__title-h-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 473.733 473.733" style="enable-background:new 0 0 473.733 473.733;" xml:space="preserve">
+                        <path d="M231.2,336.033c-9.35,0-17,7.65-17,17v11.333c0,9.35,7.65,17,17,17s17-7.65,17-17v-11.333                                    									  C248.2,343.683,240.55,336.033,231.2,336.033z"></path>
+                        <path d="M236.867,473.733c130.617,0,236.867-106.25,236.867-236.867S367.483,0,236.867,0S0,106.25,0,236.867                                    									  S106.25,473.733,236.867,473.733z M236.867,34c111.917,0,202.867,90.95,202.867,202.867s-90.95,202.867-202.867,202.867                                    									  S34,348.783,34,236.867S124.95,34,236.867,34z"></path>
+                        <path d="M163.2,194.367C163.483,194.367,163.483,194.367,163.2,194.367c9.35,0,17-7.083,17-16.433c0,0,0.283-13.6,7.083-26.917                                    									  c8.5-17,23.517-25.5,45.617-25.5c20.683,0,35.983,5.667,44.483,16.717c7.083,9.067,9.067,21.533,5.667,35.133                                    									  c-4.25,16.717-18.7,31.167-32.583,45.333c-17,17.567-34.85,35.417-34.85,59.5c0,9.35,7.65,17,17,17s17-7.65,17-17                                    									  c0-10.2,12.183-22.667,25.217-35.7c16.15-16.433,34.567-35.133,41.083-60.633c6.233-23.517,1.983-47.033-11.617-64.317                                    									  c-10.483-13.6-31.45-30.033-71.117-30.033c-44.483,0-65.733,23.8-75.933,44.2c-10.2,20.4-10.767,39.95-10.767,42.217                                    									  C146.483,187,153.85,194.367,163.2,194.367z"></path>
+                      </svg><span class="widget__help">
+                        <p>
+                          Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
+                          я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+                          словно созданном для таких, как я.
+                        </p></span>
+                    </sapn>
+                  </div><a class="widget__title-arrow" href=""><img class="widget__title-arrow-ico" src="img/chevron-down.png" alt="icon"/></a>
+                </div>
+                <div class="widget__body">
+                  <div class="data-table data-table_h_50">
+                    <table class="data-table__cnt">
+                      <thead>
+                        <tr class="data-table__hr">
+                          <th class="data-table__h data-table__h-txt_black data-table__h_w_42"><span>Целевые показатели</span></th>
+                          <th class="data-table__h text-center"><span>Квартал 3</span></th>
+                          <th class="data-table__h text-center"><span>Квартал 4</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Выручка за акцию</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                          <td class="data-table__d text-center"><span>10$</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Рентабильность капитала</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                          <td class="data-table__d text-center"><span>19$</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Кредитный рейтинг</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                          <td class="data-table__d text-center"><span>BB+</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d data-table__d_last"><span>Имиджевый рейтинг</span></td>
+                          <td class="data-table__d text-center data-table__d_last"><span class="data-table__minus">39</span></td>
+                          <td class="data-table__d text-center data-table__d_last"><span>42</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="data-table data-table_h_50">
+                    <table class="data-table__cnt">
+                      <thead>
+                        <tr class="data-table__hr">
+                          <th class="data-table__h data-table__h-txt_black data-table__h_w_42"><span>Результаты</span></th>
+                          <th class="data-table__h text-center"><span>Квартал 3</span></th>
+                          <th class="data-table__h text-center"><span>Квартал 4</span></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Выручка за акцию</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">14,1$</span></td>
+                          <td class="data-table__d text-center"><span>10$</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Рентабильность капитала</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__plus">23,2$</span></td>
+                          <td class="data-table__d text-center"><span>19$</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d"><span>Кредитный рейтинг</span></td>
+                          <td class="data-table__d text-center"><span class="data-table__minus">B-</span></td>
+                          <td class="data-table__d text-center"><span>BB+</span></td>
+                        </tr>
+                        <tr class="data-table__r">
+                          <td class="data-table__d data-table__d_last"><span>Имиджевый рейтинг</span></td>
+                          <td class="data-table__d text-center data-table__d_last"><span class="data-table__minus">39</span></td>
+                          <td class="data-table__d text-center data-table__d_last"><span>42</span></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="widget">
+                <div class="widget__title">
+                  <div class="widget__title-cnt"><span class="widget__title-txt">Показатели R&D</span>
+                    <sapn class="widget__title-h">
+                      <svg class="widget__title-h-img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 473.733 473.733" style="enable-background:new 0 0 473.733 473.733;" xml:space="preserve">
+                        <path d="M231.2,336.033c-9.35,0-17,7.65-17,17v11.333c0,9.35,7.65,17,17,17s17-7.65,17-17v-11.333                                    									  C248.2,343.683,240.55,336.033,231.2,336.033z"></path>
+                        <path d="M236.867,473.733c130.617,0,236.867-106.25,236.867-236.867S367.483,0,236.867,0S0,106.25,0,236.867                                    									  S106.25,473.733,236.867,473.733z M236.867,34c111.917,0,202.867,90.95,202.867,202.867s-90.95,202.867-202.867,202.867                                    									  S34,348.783,34,236.867S124.95,34,236.867,34z"></path>
+                        <path d="M163.2,194.367C163.483,194.367,163.483,194.367,163.2,194.367c9.35,0,17-7.083,17-16.433c0,0,0.283-13.6,7.083-26.917                                    									  c8.5-17,23.517-25.5,45.617-25.5c20.683,0,35.983,5.667,44.483,16.717c7.083,9.067,9.067,21.533,5.667,35.133                                    									  c-4.25,16.717-18.7,31.167-32.583,45.333c-17,17.567-34.85,35.417-34.85,59.5c0,9.35,7.65,17,17,17s17-7.65,17-17                                    									  c0-10.2,12.183-22.667,25.217-35.7c16.15-16.433,34.567-35.133,41.083-60.633c6.233-23.517,1.983-47.033-11.617-64.317                                    									  c-10.483-13.6-31.45-30.033-71.117-30.033c-44.483,0-65.733,23.8-75.933,44.2c-10.2,20.4-10.767,39.95-10.767,42.217                                    									  C146.483,187,153.85,194.367,163.2,194.367z"></path>
+                      </svg><span class="widget__help">
+                        <p>
+                          Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
+                          я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
+                          словно созданном для таких, как я.
+                        </p></span>
+                    </sapn>
+                  </div><a class="widget__title-arrow" href=""><img class="widget__title-arrow-ico" src="img/chevron-down.png" alt="icon"/></a>
+                </div>
+                <div class="widget__body">
+                  <div class="widget__block_type_rd">
+                    <div class="widget__left-side"><img class="widget__option-img" src="img/img-rd.png" alt="image"/></div>
+                    <div class="widget-right-side">
+                      <div class="widget__block-options">
+                        <div class="widget__block-option widget__block-option_size_l">
+                          <div class="widget__block-option-text widget__block-option-text_size_m">HTП компании</div>
+                        </div>
+                        <div class="widget__block-option widget__block-option_size_m">
+                          <div class="widget__block-option-text widget__block-option-text_size_l">3,5</div>
+                        </div>
                       </div>
-                      <div class="widget__block-option widget__block-option_size_m"> 
-                        <div class="widget__block-option-text widget__block-option-text_size_l">3,5</div>
+                      <div class="widget__block-options">
+                        <div class="widget__block-option widget__block-option_size_l">
+                          <div class="widget__block-option-text widget__block-option-text_size_m">Место в рейтинге НТП</div>
+                        </div>
+                        <div class="widget__block-option widget__block-option_size_m">
+                          <div class="widget__block-option-text widget__block-option-text_size_l">2/5</div>
+                        </div>
                       </div>
-                    </div>
-                    <div class="widget__block-options">
-                      <div class="widget__block-option widget__block-option_size_l"> 
-                        <div class="widget__block-option-text widget__block-option-text_size_m">Место в рейтинге НТП</div>
+                      <div class="widget__block-options">
+                        <div class="widget__block-option widget__block-option_size_l">
+                          <div class="widget__block-option-text widget__block-option-text_size_s">Вероятность полного перехода на новый  уровень НТП</div>
+                        </div>
+                        <div class="widget__block-option widget__block-option_size_m">
+                          <div class="widget__block-option-text widget__block-option-text_size_l">12%</div>
+                        </div>
                       </div>
-                      <div class="widget__block-option widget__block-option_size_m"> 
-                        <div class="widget__block-option-text widget__block-option-text_size_l">2/5</div>
-                      </div>
-                    </div>
-                    <div class="widget__block-options">
-                      <div class="widget__block-option widget__block-option_size_l"> 
-                        <div class="widget__block-option-text widget__block-option-text_size_s">Вероятность полного перехода на новый  уровень НТП</div>
-                      </div>
-                      <div class="widget__block-option widget__block-option_size_m"> 
-                        <div class="widget__block-option-text widget__block-option-text_size_l">12%</div>
-                      </div>
-                    </div>
-                    <div class="widget__block-options">
-                      <div class="widget__block-option widget__block-option_size_l"> 
-                        <div class="widget__block-option-text widget__block-option-text_size_s">Вероятность частичного перехода на новый  уровень НТП</div>
-                      </div>
-                      <div class="widget__block-option widget__block-option_size_m"> 
-                        <div class="widget__block-option-text widget__block-option-text_size_l">75%</div>
+                      <div class="widget__block-options">
+                        <div class="widget__block-option widget__block-option_size_l">
+                          <div class="widget__block-option-text widget__block-option-text_size_s">Вероятность частичного перехода на новый  уровень НТП</div>
+                        </div>
+                        <div class="widget__block-option widget__block-option_size_m">
+                          <div class="widget__block-option-text widget__block-option-text_size_l">75%</div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -765,65 +847,161 @@
             </div>
           </div>
         </div>
-        <div class="content-cols">
-          <div class="content__col">
-            <div class="widget">
-              <div class="widget__title widget__title-min">
-                <div class="widget__title-cnt"><span class="widget__title-txt">Позиционирование моделей</span>
-                  <sapn class="widget__title-h"><img class="widget__title-h-img" src="img/widget-help-icon.png" alt="icon"/><span class="widget__help">
-                      <p>
-                        Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми
-                        я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю,
-                        словно созданном для таких, как я.
-                      </p></span></sapn>
-                </div><a class="widget__title-arrow" href=""><img class="widget__title-arrow-ico" src="img/chevron-down.png" alt="icon"/></a>
+      </div>
+      <div class="right-side"> 
+        <div class="right-side__container" id="chat">
+          <div class="right-side__body">
+            <div class="right-side__body-inner">
+              <div class="right-side__body-item right-side__body-item_type_from-me">
+                <div class="right-side__body-image-block right-side__body-image-block_type_from-me"><img class="right-side__body-image" src="img/chat-image.png" alt="image"/>
+                  <div class="right-side__image-details right-side__type_from-me">
+                    <div class="right-side__name">Алексей Сергеевич</div>
+                    <div class="right-side__date">22.03.17;   19:00</div>
+                  </div>
+                </div>
+                <div class="right-side__text-block right-side__text-block_type_from-me">Практика однозначно показывает, что продуктовый ассортимент экономит экспериментальный бизнес-план. </div>
+                <div class="spacer" style="clear: both;"></div>
               </div>
-              <div class="widget__body widget__body_pd"><img class="chart" src="img/model-position.png" alt="icon"/></div>
+              <div class="right-side__body-item right-side__body-item_type_from-user">
+                <div class="right-side__text-block right-side__text-block_type_from-user">Практика однозначно показывает, что продуктовый ассортимент экономит экспериментальный бизнес-план. </div>
+                <div class="right-side__body-image-block right-side__body-image-block_type_from-user"> 
+                  <div class="right-side__body-gender">М</div>
+                  <div class="right-side__image-details right-side__type_from-user">
+                    <div class="right-side__name">Алексей Сергеевич</div>
+                    <div class="right-side__date">22.03.17;   19:00</div>
+                  </div>
+                </div>
+                <div class="spacer" style="clear: both;"></div>
+              </div>
+              <div class="right-side__body-item right-side__body-item_type_from-me">
+                <div class="right-side__body-image-block right-side__body-image-block_type_from-me"><img class="right-side__body-image" src="img/chat-image.png" alt="image"/>
+                  <div class="right-side__image-details right-side__type_from-me">
+                    <div class="right-side__name">Алексей Сергеевич</div>
+                    <div class="right-side__date">22.03.17;   19:00</div>
+                  </div>
+                </div>
+                <div class="right-side__text-block right-side__text-block_type_from-me">Хорошо</div>
+                <div class="spacer" style="clear: both;"></div>
+              </div>
+              <div class="right-side__body-item right-side__body-item_type_from-user">
+                <div class="right-side__text-block right-side__text-block_type_from-user">Практика однозначно показывает, что продуктовый ассортимент экономит экспериментальный бизнес-план. </div>
+                <div class="right-side__body-image-block right-side__body-image-block_type_from-user">
+                  <div class="right-side__body-gender">М</div>
+                  <div class="right-side__image-details right-side__type_from-user">
+                    <div class="right-side__name">Алексей Сергеевич</div>
+                    <div class="right-side__date">22.03.17;   19:00</div>
+                  </div>
+                </div>
+                <div class="spacer" style="clear: both;"></div>
+              </div>
+              <div class="right-side__body-item right-side__body-item_type_from-me">
+                <div class="right-side__body-image-block right-side__body-image-block_type_from-me"><img class="right-side__body-image" src="img/chat-image.png" alt="image"/>
+                  <div class="right-side__image-details right-side__type_from-me">
+                    <div class="right-side__name">Алексей Сергеевич</div>
+                    <div class="right-side__date">22.03.17;   19:00</div>
+                  </div>
+                </div>
+                <div class="right-side__text-block right-side__text-block_type_from-me">Практика однозначно показывает, что продуктовый ассортимент экономит экспериментальный бизнес-план. </div>
+                <div class="spacer" style="clear: both;"></div>
+              </div>
+            </div>
+            <div class="right-side__input-block">
+              <div class="right-side__input-block_inner">
+                <input class="right-side__input" type="text" placeholder="Сообщение"/><a class="right-side__btn-push right-side__btn-push_form_quater" href=""><img class="right-side__push-icon" src="img/push-icon.png"/></a>
+                <div class="right-side__search-icon-block">   <img class="right-side__search-icon" src="img/search-icon.png"/></div>
+              </div>
+            </div>
+          </div>
+          <div class="right-side__input-block">
+            <div class="right-side__input-block_inner">
+              <input class="right-side__input" type="text" placeholder="Сообщение"/><a class="right-side__btn-push right-side__btn-push_form_circle" href=""><img class="right-side__push-icon" src="img/push-icon.png"/></a>
+              <div class="right-side__search-icon-block">   <img class="right-side__search-icon" src="img/search-icon.png"/></div>
+            </div>
+          </div>
+        </div>
+        <div class="right-side__container" id="news">
+          <div class="right-side__body">
+            <div class="right-side__body-inner">
+              <div class="right-side__body-item right-side__body-item_type_from-me">
+                <div class="right-side__text-block right-side__text-block_type_from-me">Практика однозначно показывает, что продуктовый ассортимент экономит экспериментальный бизнес-план. </div>
+                <div class="spacer" style="clear: both;"></div>
+              </div>
+              <div class="right-side__body-item right-side__body-item_type_from-user">
+                <div class="right-side__text-block right-side__text-block_type_from-user">Практика однозначно показывает, что продуктовый ассортимент экономит экспериментальный бизнес-план. </div>
+                <div class="spacer" style="clear: both;"></div>
+              </div>
+              <div class="right-side__body-item right-side__body-item_type_from-me">
+                <div class="right-side__text-block right-side__text-block_type_from-me">Хорошо</div>
+                <div class="spacer" style="clear: both;"></div>
+              </div>
+              <div class="right-side__body-item right-side__body-item_type_from-user">
+                <div class="right-side__text-block right-side__text-block_type_from-user">Практика однозначно показывает, что продуктовый ассортимент экономит экспериментальный бизнес-план. </div>
+                <div class="spacer" style="clear: both;"></div>
+              </div>
+              <div class="right-side__body-item right-side__body-item_type_from-me">
+                <div class="right-side__text-block right-side__text-block_type_from-me">Практика однозначно показывает, что продуктовый ассортимент экономит экспериментальный бизнес-план. </div>
+                <div class="spacer" style="clear: both;"></div>
+              </div>
+            </div>
+            <div class="right-side__input-block">
+              <div class="right-side__input-block_inner">
+                <input class="right-side__input" type="text" placeholder="Сообщение"/><a class="right-side__btn-push right-side__btn-push_form_quater" href=""><img class="right-side__push-icon" src="img/push-icon.png"/></a>
+                <div class="right-side__search-icon-block">   <img class="right-side__search-icon" src="img/search-icon.png"/></div>
+              </div>
+            </div>
+          </div>
+          <div class="right-side__input-block">
+            <div class="right-side__input-block_inner">
+              <input class="right-side__input" type="text" placeholder="Сообщение"/><a class="right-side__btn-push right-side__btn-push_form_circle" href=""><img class="right-side__push-icon" src="img/push-icon.png"/></a>
+              <div class="right-side__search-icon-block">   <img class="right-side__search-icon" src="img/search-icon.png"/></div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade modal-password" id="password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog modal-password__dialog" role="document">
-        <div class="modal-content modal-password__conent">
-          <div class="modal-password__list-container">
-            <div class="modal-password__list-block">
-              <p class="modal-password__list-item"><a class="modal-password__list-link" href="#">Вход</a></p>
-              <p class="modal-password__list-item"><a class="modal-password__list-link" href="#">Регистрация</a></p>
+      <div class="modal fade modal-password" id="password-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-password__dialog" role="document">
+          <div class="modal-content modal-password__conent">
+            <div class="modal-password__list-container">
+              <div class="modal-password__list-block">
+                <p class="modal-password__list-item"><a class="modal-password__list-link" href="#">Вход</a></p>
+                <p class="modal-password__list-item"><a class="modal-password__list-link" href="#">Регистрация</a></p>
+              </div>
+              <div class="modal-password__logo"><img class="modal-password__logo-img" src="img/modal-logo.png"/></div>
             </div>
-            <div class="modal-password__logo"><img class="modal-password__logo-img" src="img/modal-logo.png"/></div>
-          </div>
-          <div class="modal-password__form">          
-            <button class="close modal-password__close-button" data-dismiss="modal" arial-label="Close"><span aria-hidden="true">&times;</span></button>
-            <div class="modal-password__form-block">
-              <div class="modal-password__form-title">Напомнить пароль</div>
-              <input class="modal-password__form-input" type="text" placeholder="Ваш логин"/>
-              <button class="modal-password-btn" type="button" data-dismiss="modal" arial-label="Close">Выслать пароль    </button>
+            <div class="modal-password__form">          
+              <button class="close modal-password__close-button" data-dismiss="modal" arial-label="Close"><span aria-hidden="true">&times;</span></button>
+              <div class="modal-password__form-block">
+                <div class="modal-password__form-title">Напомнить пароль</div>
+                <input class="modal-password__form-input" type="text" placeholder="Ваш логин"/>
+                <button class="modal-password-btn" type="button" data-dismiss="modal" arial-label="Close">Выслать пароль    </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-    <div class="modal fade modal-password" id="modal-help" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-      <div class="modal-dialog modal-help__dialog" role="document">
-        <div class="modal-content modal-help__conent"><img class="modal-content__close_btn" src="img/modal-close-btn.png" data-dismiss="modal" arial-label="Close"/>
-          <div class="modal-help__title">Справка</div>
-          <div class="modal-help__question">
-            <div class="modal-help__question-title">Первый вопрос, как этим пользоваться?</div>
-            <div class="modal-help__question-body">Требуется создать 5 слайдов для телевизоров-экранов. На 3 будетпо 6 фоток блюд, которые нужно найти в хорошем качестве. Образцы фоток дам. На остальных 2 слайдах будет текст и картинка, которую дам.  Нужно сделать качественно и аппетитно. Очень аппетитно. Телевизор 32 дюйма. Качество хз, но...</div>
-          </div>
-          <div class="modal-help__question">
-            <div class="modal-help__question-title">Первый вопрос, как этим пользоваться?</div>
-            <div class="modal-help__question-body">Требуется создать 5 слайдов для телевизоров-экранов. На 3 будетпо 6 фоток блюд, которые нужно найти в хорошем качестве. Образцы фоток дам. На остальных 2 слайдах будет текст и картинка, которую дам.  Нужно сделать качественно и аппетитно. Очень аппетитно. Телевизор 32 дюйма. Качество хз, но...</div>
-          </div>
-          <div class="modal-help__question">
-            <div class="modal-help__question-title">Первый вопрос, как этим пользоваться?</div>
-            <div class="modal-help__question-body">Требуется создать 5 слайдов для телевизоров-экранов. На 3 будетпо 6 фоток блюд, которые нужно найти в хорошем качестве. Образцы фоток дам. На остальных 2 слайдах будет текст и картинка, которую дам.  Нужно сделать качественно и аппетитно. Очень аппетитно. Телевизор 32 дюйма. Качество хз, но...</div>
-          </div>
-          <div class="modal-help__question">
-            <div class="modal-help__question-title">Первый вопрос, как этим пользоваться?</div>
-            <div class="modal-help__question-body">Требуется создать 5 слайдов для телевизоров-экранов. На 3 будетпо 6 фоток блюд, которые нужно найти в хорошем качестве. Образцы фоток дам. На остальных 2 слайдах будет текст и картинка, которую дам.  Нужно сделать качественно и аппетитно. Очень аппетитно. Телевизор 32 дюйма. Качество хз, но...</div>
+      <div class="modal fade modal-password" id="modal-help" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-help__dialog" role="document">
+          <div class="modal-content modal-help__conent">
+            <div class="modal-content__close_btn" data-dismiss="modal" arial-label="Close">
+              <div class="del-circle del-circle_big"></div>
+            </div>
+            <div class="modal-help__title">Справка</div>
+            <div class="modal-help__question">
+              <div class="modal-help__question-title"><span>Первый вопрос, как этим пользоваться?</span></div>
+              <div class="modal-help__question-body">Требуется создать 5 слайдов для телевизоров-экранов. На 3 будетпо 6 фоток блюд, которые нужно найти в хорошем качестве. Образцы фоток дам. На остальных 2 слайдах будет текст и картинка, которую дам.  Нужно сделать качественно и аппетитно. Очень аппетитно. Телевизор 32 дюйма. Качество хз, но...</div>
+            </div>
+            <div class="modal-help__question">
+              <div class="modal-help__question-title"><span>Первый вопрос, как этим пользоваться?</span></div>
+              <div class="modal-help__question-body">Требуется создать 5 слайдов для телевизоров-экранов. На 3 будетпо 6 фоток блюд, которые нужно найти в хорошем качестве. Образцы фоток дам. На остальных 2 слайдах будет текст и картинка, которую дам.  Нужно сделать качественно и аппетитно. Очень аппетитно. Телевизор 32 дюйма. Качество хз, но...</div>
+            </div>
+            <div class="modal-help__question">
+              <div class="modal-help__question-title"><span>Первый вопрос, как этим пользоваться?</span></div>
+              <div class="modal-help__question-body">Требуется создать 5 слайдов для телевизоров-экранов. На 3 будетпо 6 фоток блюд, которые нужно найти в хорошем качестве. Образцы фоток дам. На остальных 2 слайдах будет текст и картинка, которую дам.  Нужно сделать качественно и аппетитно. Очень аппетитно. Телевизор 32 дюйма. Качество хз, но...</div>
+            </div>
+            <div class="modal-help__question">
+              <div class="modal-help__question-title"><span>Первый вопрос, как этим пользоваться?</span></div>
+              <div class="modal-help__question-body">Требуется создать 5 слайдов для телевизоров-экранов. На 3 будетпо 6 фоток блюд, которые нужно найти в хорошем качестве. Образцы фоток дам. На остальных 2 слайдах будет текст и картинка, которую дам.  Нужно сделать качественно и аппетитно. Очень аппетитно. Телевизор 32 дюйма. Качество хз, но...</div>
+            </div>
           </div>
         </div>
       </div>

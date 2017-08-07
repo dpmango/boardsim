@@ -96,7 +96,6 @@ $(document).ready(function() {
             parent = $(this).closest('.model');
 
         parent.find('.model__img, .model__data').fadeOut(0);
-        console.log(identef);
 
         if (identef == 'img') {
 
@@ -161,16 +160,14 @@ var sortobj = {
                 'html': $(this).html()
             });
         });
-        console.log(self.sortData);
     },
 
     checkMethod: function(that, tbody, spans) {
         var self = this;
         if (!that.hasClass('desc')) {
-            console.log(that);
             spans.removeClass('asc desc');
             that.addClass('desc');
-            console.log('desc');
+
             self.sort({
                 data: self.sortData,
                 method: 'desc',
@@ -179,7 +176,6 @@ var sortobj = {
         } else {
             spans.removeClass('asc desc');
             that.addClass('asc');
-            console.log('asc');
 
             self.sort({
                 data: self.sortData,
@@ -198,7 +194,6 @@ var sortobj = {
             if (new Date(a.value).getTime()) {
                 a = new Date(a.value).getTime();
                 b = new Date(b.value).getTime();
-                console.log(a, b);
             } else {
                 a = a.value;
                 b = b.value;
@@ -212,7 +207,6 @@ var sortobj = {
             }
 
         });
-        console.log(option.data);
         self.createTable(option.tbody, option.data);
 
     },
@@ -250,17 +244,13 @@ $(window).on('resize', function() {
 function setHeight() {
     console.log('resize');
 
-    $('.content__col:first-child .widget').each(function() {
-        //console.log($(this));
+    $('.content__col:first-child .widget, .content__col:first-child .cabinet-widget').each(function() {
        var widget      = $(this),
            widgetIndex = widget.index(),
            sibling     = widget.closest('.content__col')
                          .siblings('.content__col')
-                         .find('.widget:not(.widget_auto)').eq(widgetIndex);
+                         .find('.widget:not(.widget_auto), .cabinet-widget:not(.cabinet-widget_auto)').eq(widgetIndex);
 
-
-       console.log(widget.outerHeight());
-       console.log(sibling.outerHeight());
 
         if($('body').width() > 1024) {
             if(sibling.length) {
@@ -279,45 +269,11 @@ function setHeight() {
     });
 
 
-    // $('.data-table_height_a').each(function () {
-    //     var widget = $(this).closest('.widget'),
-    //         widgetIndex = widget.index(),
-    //
-    //         sibling = $(this).closest('.content__col')
-    //             .siblings('.content__col')
-    //             .find('.widget:not(.widget_auto)').eq(widgetIndex),
-    //         siblingT = sibling.find('.data-table_height_a');
-    //
-    //     if (sibling.length) {
-    //         if($('body').width() > 1024) {
-    //             if (siblingT.length) {
-    //
-    //                 if ($(this).outerHeight() > siblingT.outerHeight())
-    //                     sibling.css('height', widget.outerHeight());
-    //                 else
-    //                     widget.css('height', sibling.outerHeight());
-    //
-    //             } else {
-    //                 sibling.css('height', widget.outerHeight());
-    //             }
-    //         } else {
-    //             widget.css('height', 'auto');
-    //             sibling.css('height', 'auto');
-    //         }
-    //
-    //
-    //     }
-    //
-    //
-    // });
-
 }
 
 
 function setSiblingsHeight(widget, sibling) {
-    //console.log('setSiblingsHeight');
     if(widget.outerHeight() > sibling.outerHeight()) {
-        console.log(1);
         sibling.css('height', widget.outerHeight() )
     } else {
         widget.css('height', sibling.outerHeight() )
@@ -325,7 +281,6 @@ function setSiblingsHeight(widget, sibling) {
 }
 
 function setSiblingsWithTableHeight(widget, sibling) {
-    //console.log('setSiblingsWithTableHeight');
     var widgetT = widget.find('.data-table_height_a'),
         siblingT = sibling.find('.data-table_height_a');
 
@@ -371,6 +326,32 @@ function setTableHeight() {
 
     }
 }
+
+
+$('.message-table__btn ').click(function() {
+    var table = $(this).prev('.message-table__cnt_hidden'),
+        widget = $(this).closest('.cabinet-widget');
+    table.slideToggle(100);
+    $(this).toggleClass('active');
+
+    widget.toggleClass('cabinet-widget_height_auto');
+
+});
+
+
+$('.account-panel__it').click(function(e) {
+    e.preventDefault();
+
+    var blockId = $(this).attr('href'),
+        tabs = $(this).closest('.account-panel').next('.tabs').find('.tab');
+
+    tabs.css('display', 'none');
+    $(blockId).fadeIn();
+
+    $('.account-panel__it').removeClass('active');
+    $(this).addClass('active');
+
+});
 
 
 

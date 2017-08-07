@@ -138,6 +138,24 @@ $(document).ready(function() {
         $(this).toggleClass('active-question');
     })
     setWidth();
+    $('.cabinet-widget__tab-btn').click(function() {
+        $('.cabinet-widget__tab-btn').removeClass('cabinet-widget__tab-btn_state_active');
+        $(this).addClass('cabinet-widget__tab-btn_state_active');
+
+        if ($(this).attr('id') == "decision") {
+            $('.cabinet-widget__tab').removeClass('cabinet-widget__tab_state_active')
+            $('#table-content').addClass('cabinet-widget__tab_state_active')
+        }
+        if ($(this).attr('id') == "video-learning") {
+            $('.cabinet-widget__tab').removeClass('cabinet-widget__tab_state_active')
+            $('#video-learning-content').addClass('cabinet-widget__tab_state_active')
+        }
+        if ($(this).attr('id') == "video-analitic") {
+            $('.cabinet-widget__tab').removeClass('cabinet-widget__tab_state_active')
+            $('#video-analitic-content').addClass('cabinet-widget__tab_state_active')
+        }
+
+    })
 });
 
 function openRightSide() {

@@ -1,0 +1,66 @@
+include ../envelope-icon/envelope-icon.pug
+include ../calendar-icon/calendar-icon.pug
+include ../email-icon/email-icon.pug
+
+mixin deadline()
+	.cabinet-widget
+		.cabinet-widget__title
+			.cabinet-widget__title-txt Сообщения и дедлайны
+			.cabinet-widget__title-h
+				.count-circle.count-circle_red 1
+				.count-circle.count-circle_blue 3
+				+envelope-icon('cabinet-widget__envelope')
+		.cabinet-widget__body
+			.message-table
+				.message-table__cnt
+				table.message-table__table
+					tbody
+						tr.message-table__it.active
+							td.message-table__d.message-table__d_ico
+								+calendar-icon('message-table__icon ')
+							td.message-table__d
+								span.message-table__name.active Дедлайн
+							td.message-table__d.message-table__d_right
+								span.message-table__date 12-26-2017
+						tr.message-table__it.active
+							td.message-table__d.message-table__d_ico
+								+email-icon('message-table__icon')
+							td.message-table__d
+								span.message-table__name.active Сообщение от пользователя Ивана
+							td.message-table__d.message-table__d_right
+								span.message-table__date 12-26-2017
+						- for (var i = 0; i < 3; i++)
+							tr.message-table__it
+								td.message-table__d.message-table__d_ico
+									+email-icon('message-table__icon')
+								td.message-table__d
+									span.message-table__name.active Сообщение от пользователя Ивана
+								td.message-table__d.message-table__d_right
+									span.message-table__date 12-26-2017
+				.message-table__cnt.message-table__cnt_hidden
+					table.message-table__table
+						tbody
+							tr.message-table__it.active
+								td.message-table__d.message-table__d_ico
+									+calendar-icon('message-table__icon ')
+								td.message-table__d
+									span.message-table__name.active Дедлайн
+								td.message-table__d.message-table__d_right
+									span.message-table__date 12-26-2017
+							tr.message-table__it.active
+								td.message-table__d.message-table__d_ico
+									+email-icon('message-table__icon')
+								td.message-table__d
+									span.message-table__name.active Сообщение от пользователя Ивана
+								td.message-table__d.message-table__d_right
+									span.message-table__date 12-26-2017
+							- for (var i = 0; i < 2; i++)
+							tr.message-table__it
+								td.message-table__d.message-table__d_ico
+									+email-icon('message-table__icon')
+								td.message-table__d
+									span.message-table__name.active Сообщение от пользователя Ивана
+								td.message-table__d.message-table__d_right
+									span.message-table__date 12-26-2017
+				button.message-table__btn.btn(type="button")
+					img.message-table__btn-img(src="img/open-btn.png", srcset="img/open-btn@2x.png 2x")
